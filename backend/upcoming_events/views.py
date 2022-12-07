@@ -9,6 +9,6 @@ from .serializers import UpcomingEventSerializer
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def show_all_upcoming_events(request):
-    events = UpcomingEvent.objects.all
+    events = UpcomingEvent.objects.all()
     serializer = UpcomingEventSerializer(events, many=True)
-    return Response('serializer.data')
+    return Response(serializer.data)
