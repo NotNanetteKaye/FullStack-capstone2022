@@ -6,9 +6,9 @@ from rest_framework import status
 from .models import UpcomingEvent
 from .serializers import UpcomingEventSerializer
 
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
-def show_all_upcoming_events(request):
+def upcoming_events_list(request):
     events = UpcomingEvent.objects.all()
     serializer = UpcomingEventSerializer(events, many=True)
     return Response(serializer.data)
