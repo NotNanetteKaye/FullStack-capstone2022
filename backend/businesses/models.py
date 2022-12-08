@@ -4,7 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
 
-class UpcomingEvent(models.Model):
+class Business(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=300)
     type = models.CharField(max_length=300)
