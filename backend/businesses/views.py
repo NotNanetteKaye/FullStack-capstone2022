@@ -9,7 +9,7 @@ from django.shortcuts import get_object_or_404
 
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
-def upcoming_events_list(request):
+def business_list(request):
     if request.method == 'GET':
         events = Business.objects.all()
         serializer = BusinessSerializer(events, many=True)
@@ -23,7 +23,7 @@ def upcoming_events_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 @permission_classes([AllowAny])
-def upcoming_events_detail(request, pk):
+def business_detail(request, pk):
     event = get_object_or_404(Business, pk=pk)
     if request.method == 'GET':
         serializer = BusinessSerializer(event)
