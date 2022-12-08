@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import UpcomingEvent
 from .serializers import UpcomingEventSerializer
+from django.shortcuts import get_object_or_404
 
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
@@ -22,9 +23,6 @@ def upcoming_events_list(request):
 
 @api_view(['GET'])
 def upcoming_events_detail(request, pk):
-    try:
-        event =  UpcomingEvent.objects.get(pk=pk)
-        serializer = UpcomingEventSerializer(event)
-        return Response(serializer.data)
-    except UpcomingEvent.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+    event = get_object_or_404(UpcomingEvent, pk=pk)
+    serializer = UpcomingEventSerializer(event)
+    return Response(serializer.data)
