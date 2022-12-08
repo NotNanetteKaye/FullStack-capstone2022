@@ -19,3 +19,12 @@ def upcoming_events_list(request):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.errors, status=status.HTTP_201_CREATED)
+
+@api_view(['GET'])
+def upcoming_events_detail(request, pk):
+    try:
+        event =  UpcomingEvent.objects.get(pk=pk)
+        serializer = UpcomingEventSerializer(event)
+        return Response(serializer.data)
+    except UpcomingEvent.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
