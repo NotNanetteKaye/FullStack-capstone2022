@@ -21,8 +21,14 @@ def upcoming_events_list(request):
         serializer.save()
         return Response(serializer.errors, status=status.HTTP_201_CREATED)
 
-@api_view(['GET'])
+@api_view(['GET', 'PUT'])
 def upcoming_events_detail(request, pk):
     event = get_object_or_404(UpcomingEvent, pk=pk)
-    serializer = UpcomingEventSerializer(event)
-    return Response(serializer.data)
+    if request.method == 'GET':
+        serializer = UpcomingEventSerializer(event)
+        return Response(serializer.data)
+    elif request.method == 'PUT':
+        serializer = UpcomingEventSerializer(event, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
