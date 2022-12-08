@@ -9,6 +9,13 @@ from .serializers import UpcomingEventSerializer
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def upcoming_events_list(request):
-    events = UpcomingEvent.objects.all()
-    serializer = UpcomingEventSerializer(events, many=True)
-    return Response(serializer.data)
+    if request.method == 'GET':
+        events = UpcomingEvent.objects.all()
+        serializer = UpcomingEventSerializer(events, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = UpcomingEventSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.errors, status=status.HTTP_201_CREATED)

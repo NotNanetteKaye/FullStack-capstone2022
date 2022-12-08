@@ -5,5 +5,5 @@ from .models import UpcomingEvent
 class UpcomingEventSerializer(serializers.ModelSerializer):
     class Meta:
         model = UpcomingEvent
-        fields = ['id', 'user', 'title', 'when', 'address', 'description', 'image', 'link']
+        fields = ['id', 'user', 'title', 'when', 'address', 'description', 'image', 'link', 'user_id']
         depth = 1
