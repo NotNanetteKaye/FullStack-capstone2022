@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Business
+from .models import SpotifyArtist
 
 
-class BusinessSerializer(serializers.ModelSerializer):
+class SpotifyArtistSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Business
+        model = SpotifyArtist
         fields = ['id', 'spotify_id', 'image', 'artist_name', 'genre', 'URI', 'user_id']
         depth = 1
 
