@@ -2,7 +2,7 @@ from django.db import models
 from authentication.models import User
 
 # Create your models here.
-class Artist(models.Model):
+class SpotArtist(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     spotify_id = models.CharField(max_length=280)
     image = models.CharField(max_length=300)
