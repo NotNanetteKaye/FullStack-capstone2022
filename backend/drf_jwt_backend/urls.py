@@ -22,5 +22,5 @@ urlpatterns = [
     path('api/cars/', include('cars.urls')),
     path('api/upcoming_events/', include('upcoming_events.urls')),
     path('api/businesses/', include('businesses.urls')),
-    path('api/artists/', include('spotify_artists.urls')),
+    path('api/artists/', include('sp_artists.urls')),
 ]
