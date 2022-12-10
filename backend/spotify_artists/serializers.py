@@ -3,9 +3,8 @@ from .models import SpotifyArtist
 
 
 class SpotifyArtistSerializer(serializers.ModelSerializer):
+    user_id = serializers.IntegerField(write_only=True)
     class Meta:
         model = SpotifyArtist
-        fields = ['id', 'spotify_id', 'image', 'artist_name', 'genre', 'URI', 'user_id']
+        fields = ['id', 'spotify_id', 'image', 'artist_name', 'genre', 'URI', 'user', 'user_id']
         depth = 1
-
-    user_id = serializers.IntegerField(write_only=True)
