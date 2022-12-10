@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'upcoming_events',
     'businesses',
     'spotify_artists',
+    'artists',
 ]
 
 MIDDLEWARE = [
