@@ -11,6 +11,7 @@ import MusicPage from "./pages/MusicPage/MusicPage";
 import FoodPage from "./pages/FoodPage/FoodPage";
 import BusinessPage from "./pages/BusinessesPage/BusinessPage";
 import EventsPage from "./pages/EventsPage/EventsPage";
+import FavoritesPage from "./pages/FavoritesPage/FavoritesPage"
 
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
@@ -39,7 +40,7 @@ function App() {
         <Route path="/food" element={<FoodPage />}/>
         <Route path="/businesses" element={<BusinessPage />}/>
         <Route path="/events" element={<EventsPage />}/>
-        <Route path="/favorites"/>
+        <Route path="/favorites" element={<FavoritesPage />}/>
       </Routes>
       <Footer />
     </div>
