@@ -22,17 +22,23 @@ def business_list(request):
         return Response(serializer.errors, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def business_detail(request, pk):
-    event = get_object_or_404(Business, pk=pk)
+    print(
+        'User ', f"{request.user.id} {request.user.email} {request.user.username}"
+    )
     if request.method == 'GET':
-        serializer = BusinessSerializer(event)
+        business = Business.objects.filter(user_id=request.user.id)
+        serializer = BusinessSerializer(business, many=True)
         return Response(serializer.data)
     elif request.method == 'PUT':
-        serializer = BusinessSerializer(event, data=request.data)
+        business = get_object_or_404(Business, pk=pk)
+        serializer = BusinessSerializer(business, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
     elif request.method == 'DELETE':
-        event.delete()
+        business = get_object_or_404(Business, pk=pk)
+        business.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+

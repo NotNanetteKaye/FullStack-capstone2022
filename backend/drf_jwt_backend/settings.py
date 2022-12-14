@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'cars.apps.CarsConfig',  # This app is for example use only
     'upcoming_events',
     'businesses',
-    'spotify_artists',
     'sp_artists'
 ]
 
