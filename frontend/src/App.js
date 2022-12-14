@@ -9,6 +9,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import DarlingDreamsPage from "./pages/DarlingDreamsPage/DarlingDreams";
 import MusicPage from "./pages/MusicPage/MusicPage"
 import FoodPage from "./pages/FoodPage/FoodPage"
+import BusinessPage from "./pages/BusinessesPage/BusinessPage"
 
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
@@ -35,7 +36,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/music" element={<MusicPage />}/>
         <Route path="/food" element={<FoodPage />}/>
-        <Route path="/businesses"/>
+        <Route path="/businesses" element={<BusinessPage />}/>
         <Route path="/events"/>
         <Route path="/favorites"/>
       </Routes>
