@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import DarlingDreamsPage from "./pages/DarlingDreamsPage/DarlingDreams";
 import MusicPage from "./pages/MusicPage/MusicPage"
+import FoodPage from "./pages/FoodPage/FoodPage"
 
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
@@ -32,7 +33,11 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/darlingdreams" element={<DarlingDreamsPage/>} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/music" element={<MusicPage />}>
+        <Route path="/music" element={<MusicPage />}/>
+        <Route path="/food" element={<FoodPage />}/>
+        <Route path="/businesses"/>
+        <Route path="/events"/>
+        <Route path="/favorites"/>
       </Routes>
       <Footer />
     </div>
