@@ -23,18 +23,25 @@ def artist_list(request):
         return Response(serializer.errors, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def artist_detail(request, pk):
-    artist = get_object_or_404(SpArtists, pk=pk)
+    print(
+        'User ', f"{request.user.id} {request.user.email} {request.user.username}"
+    )
     if request.method == 'GET':
-        serializer = SpArtistsSerializer(artist)
+        artist = SpArtists.objects.filter(user_id=request.user.id)
+        serializer = SpArtistsSerializer(artist, many=True)
         return Response(serializer.data)
     elif request.method == 'PUT':
+        artist = get_object_or_404(SpArtists, pk=pk)
         serializer = SpArtistsSerializer(artist, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
     elif request.method == 'DELETE':
+        artist = get_object_or_404(SpArtists, pk=pk)
         artist.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
 
