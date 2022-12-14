@@ -7,9 +7,10 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import DarlingDreamsPage from "./pages/DarlingDreamsPage/DarlingDreams";
-import MusicPage from "./pages/MusicPage/MusicPage"
-import FoodPage from "./pages/FoodPage/FoodPage"
-import BusinessPage from "./pages/BusinessesPage/BusinessPage"
+import MusicPage from "./pages/MusicPage/MusicPage";
+import FoodPage from "./pages/FoodPage/FoodPage";
+import BusinessPage from "./pages/BusinessesPage/BusinessPage";
+import EventsPage from "./pages/EventsPage/EventsPage";
 
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
@@ -37,7 +38,7 @@ function App() {
         <Route path="/music" element={<MusicPage />}/>
         <Route path="/food" element={<FoodPage />}/>
         <Route path="/businesses" element={<BusinessPage />}/>
-        <Route path="/events"/>
+        <Route path="/events" element={<EventsPage />}/>
         <Route path="/favorites"/>
       </Routes>
       <Footer />
