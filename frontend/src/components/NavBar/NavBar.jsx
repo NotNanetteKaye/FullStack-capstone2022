@@ -17,6 +17,21 @@ const Navbar = () => {
             <button onClick={() => navigate("/login")}>Login</button>
           )}
         </li>
+        <li>
+          <Link to="/darlingdreams">Home</Link>
+        </li>
+        <li>
+          <Link to="/food">Food</Link>
+        </li>
+        <li>
+          <Link to="/business">Businesses</Link>
+        </li>
+        <li>
+          <Link to="/music">Music</Link>
+        </li>
+        <li>
+          <Link to="/events">Events</Link>
+        </li>
       </ul>
     </div>
   );
