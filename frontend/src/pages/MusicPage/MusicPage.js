@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ArtistMapper from '../../components/ArtistMapper/ArtistMapper';
 import useAuth from "../../hooks/useAuth";
 
