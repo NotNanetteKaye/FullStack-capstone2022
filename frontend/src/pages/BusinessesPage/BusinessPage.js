@@ -483,7 +483,7 @@ const BusinessesPage = () => {
     
     return (
         <div>
-
+          <BusinessesPage businesses = {businesses} />
         </div>
     )
 }

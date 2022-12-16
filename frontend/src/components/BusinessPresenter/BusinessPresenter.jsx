@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BusinessPresenter = () => {
+const BusinessPresenter = ({business}) => {
     return (
         <div>
-
+            <h1></h1>
         </div>
     )
 }
