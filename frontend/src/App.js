@@ -36,10 +36,10 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/music" element={<MusicPage />}/>
-        {/* <Route path="/food" element={<FoodPage />}/>
+        <Route path="/food" element={<FoodPage />}/> 
         <Route path="/businesses" element={<BusinessPage />}/>
-        <Route path="/events" element={<EventsPage />}/>
-        <Route path="/favorites" element={<FavoritesPage />}/> */}
+        {/* <Route path="/events" element={<EventsPage />}/>
+        <Route path="/favorites" element={<FavoritesPage />}/>  */}
         {/* <Route path="/darlingdreams" element={<DarlingDreamsPage/>} /> */}
       </Routes>
       <Footer />
