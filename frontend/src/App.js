@@ -39,8 +39,8 @@ function App() {
         <Route path="/food" element={<FoodPage />}/> 
         <Route path="/business" element={<BusinessPage />}/>
         <Route path="/events" element={<EventsPage />}/>
+        <Route path="/darlingdreams" element={<DarlingDreamsPage />}/>
         {/* <Route path="/favorites" element={<FavoritesPage />}/>  */}
-        {/* <Route path="/darlingdreams" element={<DarlingDreamsPage/>} /> */}
       </Routes>
       <Footer />
     </div>
