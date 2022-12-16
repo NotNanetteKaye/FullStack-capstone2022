@@ -38,8 +38,8 @@ function App() {
         <Route path="/music" element={<MusicPage />}/>
         <Route path="/food" element={<FoodPage />}/> 
         <Route path="/business" element={<BusinessPage />}/>
-        {/* <Route path="/events" element={<EventsPage />}/>
-        <Route path="/favorites" element={<FavoritesPage />}/>  */}
+        <Route path="/events" element={<EventsPage />}/>
+        {/* <Route path="/favorites" element={<FavoritesPage />}/>  */}
         {/* <Route path="/darlingdreams" element={<DarlingDreamsPage/>} /> */}
       </Routes>
       <Footer />

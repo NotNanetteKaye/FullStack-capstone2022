@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import EventsMapper from "../../components/EventsMapper/EventsMapper"
 
 const EventsPage  = () => {
     const [events, setEvents] = useState([{
@@ -243,7 +244,7 @@ const EventsPage  = () => {
 
     return (
         <div>
-
+            <EventsMapper events = {events} />
         </div>
     )
 }
