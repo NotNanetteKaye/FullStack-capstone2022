@@ -5,31 +5,26 @@ ul {
 }
 
 li {
-  font-size: 1.25rem;
+  font-size: 2.25rem;
 }
 
 .navBar {
-  background: steelblue;
+  background: white;
   box-shadow: 4px 2px 5px gray;
-  color: white;
+  color: #566056;
   margin-bottom: 2rem;
   padding: 1.5rem 2rem;
 }
 
 .navBar button {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  color: #566056;
   padding: 0.4rem 0.5rem;
 }
 
 .navBar button:hover {
   background: white;
-  color: steelblue;
+  color: #566056;
   cursor: pointer;
 }
 
-.brand {
-  cursor: pointer;
-  font-size: 2rem;
-}
