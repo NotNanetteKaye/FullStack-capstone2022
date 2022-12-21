@@ -4,7 +4,7 @@ import BusinessPresenter from '../BusinessPresenter/BusinessPresenter';
 const BusinessMapper = ({businesses}) => {
     return (
         <div>
-            {businesses.map(e => <BusinessPresenter key={e.local_results.places.place_id} business={e}/>)}
+            {businesses.map(business => <BusinessPresenter key={business.local_results.places.map((business, index) => console.log(index))} business={business.local_results.places}/>)}
         </div>
     )
 }
