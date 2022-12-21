@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BusinessMapper from "../../components/BusinessMapper/BusinessMapper"
 
 
 
@@ -471,7 +472,7 @@ const FoodPage = () => {
 
     return (
         <div>
-
+          <BusinessMapper businesses = {restaurants} />
         </div>
     )
 }
