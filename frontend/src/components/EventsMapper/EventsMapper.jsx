@@ -4,7 +4,11 @@ import EventsPresenter from '../EventsPresenter/EventsPresenter';
 const EventsMapper = ({events}) => {
     return (
         <div>
-            {events.map(e=> <EventsPresenter key={e.events_results.map((e, index) => console.log(index))} event={e.events_results}/>)}
+            {events.map((event, index) => {
+                return (
+                    <EventsPresenter key={index} event={event.events_results} />
+                )
+            })}
         </div>
     )
 }
