@@ -1,12 +1,17 @@
 import React from 'react';
 
-const BusinessPresenter = ({business}) => {
+const BusinessPresenter = ({places}) => {
     
     return (
         <div>
-            {business.map(e => e.title)}
-            {business.map(e => e.type)}
-            {business.map(e => e.hours)}
+            {console.log(places)}
+            {places.map((place, index) => {
+                return (
+                    <div key={index}>
+                        <h1>{place.title}</h1>
+                    </div>
+                )
+            })}
         </div>
     )
 }
