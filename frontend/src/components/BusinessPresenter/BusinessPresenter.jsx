@@ -9,6 +9,9 @@ const BusinessPresenter = ({places}) => {
                 return (
                     <div key={index}>
                         <h1>{place.title}</h1>
+                        <p>{place.type}</p>
+                        <p>{place.hours}</p>
+                        <p>{place.address}</p>
                     </div>
                 )
             })}
