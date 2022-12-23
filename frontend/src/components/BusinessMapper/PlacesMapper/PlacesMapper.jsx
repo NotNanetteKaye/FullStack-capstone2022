@@ -6,7 +6,7 @@ const PlacesMapper = ({places}) => {
         <div>
             {places.map((place, index) => {
                 return (
-                    <BusinessPresenter key={index} place={place} />
+                    <BusinessPresenter key={index} place={place} title={place.title} type={place.type} address={place.address} thumbnail={place.thumbnail} hours={place.hours} />
                 )
             })}
         </div>
