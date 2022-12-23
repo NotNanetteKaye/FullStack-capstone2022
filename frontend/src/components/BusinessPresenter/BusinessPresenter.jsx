@@ -23,8 +23,8 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
                 headers: {Authorization: "Bearer " + token},
             }
         );
-        if (response.status == 201) {
-            alert("Successfully favorited a new artist!")
+        if (response.status === 201) {
+            alert("Successfully saved business!")
         }
         console.log(newFaveBusiness);
         } catch (error) {
