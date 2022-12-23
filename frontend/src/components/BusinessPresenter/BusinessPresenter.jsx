@@ -12,6 +12,7 @@ const BusinessPresenter = ({places}) => {
                         <p>{place.type}</p>
                         <p>{place.hours}</p>
                         <p>{place.address}</p>
+                        <img src={place.thumbnail} alt=''/>
                     </div>
                 )
             })}
