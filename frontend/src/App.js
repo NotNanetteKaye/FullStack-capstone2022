@@ -40,7 +40,7 @@ function App() {
         <Route path="/business" element={<BusinessPage />}/>
         <Route path="/events" element={<EventsPage />}/>
         <Route path="/darlingdreams" element={<DarlingDreamsPage />}/>
-        {/* <Route path="/favorites" element={<FavoritesPage />}/>  */}
+        <Route path="/favorites" element={<FavoritesPage />}/> 
       </Routes>
       <Footer />
     </div>

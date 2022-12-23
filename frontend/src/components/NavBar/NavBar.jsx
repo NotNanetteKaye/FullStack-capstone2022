@@ -32,6 +32,9 @@ const Navbar = () => {
         <li>
           <Link to="/events">Events</Link>
         </li>
+        <li>
+          <Link to="/favorites">Your faves!</Link>
+        </li>
       </ul>
     </div>
   );
