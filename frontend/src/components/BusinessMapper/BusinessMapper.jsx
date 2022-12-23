@@ -1,5 +1,5 @@
 import React from 'react';
-import BusinessPresenter from '../BusinessPresenter/BusinessPresenter';
+import PlacesMapper from "../BusinessMapper/PlacesMapper/PlacesMapper"
 
 const BusinessMapper = ({businesses}) => {
     return (
@@ -8,7 +8,7 @@ const BusinessMapper = ({businesses}) => {
 
             {businesses.map((business, index) => {
             return (
-                <BusinessPresenter key={index} places={business.local_results.places} />
+                <PlacesMapper key={index} places={business.local_results.places} />
             )
         })}
         
