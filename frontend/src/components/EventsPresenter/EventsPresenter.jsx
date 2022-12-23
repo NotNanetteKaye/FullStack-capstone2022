@@ -1,11 +1,19 @@
 import React from 'react';
 
-const EventsPresenter = ({event}) => {
+const EventsPresenter = ({results}) => {
     return (
         <div>
-            {event.map(e => e.title)}
-            {event.map(e => e.description)}
-            {event.map(e => e.link)}
+            {results.map((event, index) => {
+                return (
+                    <div key={index}>
+                        <h1>{event.title}</h1>
+                        <p>{event.date.when}</p>
+                        <p>{event.link}</p>
+                        <p>{event.description}</p>
+                        
+                    </div>
+                )
+            })}
         </div>
     )
 }
