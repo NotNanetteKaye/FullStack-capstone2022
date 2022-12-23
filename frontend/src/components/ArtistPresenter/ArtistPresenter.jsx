@@ -2,17 +2,17 @@ import axios from "axios"
 import React, { useState } from 'react';
 import useAuth from "../../hooks/useAuth"
 
-const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre}) => {
+const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) => {
     const [user, token] = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         let newFaveArtist = {
-            spotify_id: '1' ,
-            image: 'img' ,
-            artist_name: 'nan' ,
-            genre: 'genre' ,
-            URI: 'URI',
+            spotify_id: spotify_id ,
+            image: img ,
+            artist_name: artist_name ,
+            genre: genre,
+            URI: link,
             user_id: 1 ,
         };
         try {
@@ -22,7 +22,9 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre}) => {
                 headers: {Authorization: "Bearer " + token},
             }
         );
-        https://github.com/NotNanetteKaye/youtube-clone.git
+        if (response.status == 201) {
+            alert("Successfully favorited a new artist!")
+        }
         console.log(newFaveArtist);
         } catch (error) {
          console.log(error.response);
