@@ -10,7 +10,8 @@ const EventsPresenter = ({results}) => {
                         <p>{event.date.when}</p>
                         <p>{event.link}</p>
                         <p>{event.description}</p>
-                        
+                        <img src={event.image} alt=''/>
+
                     </div>
                 )
             })}
