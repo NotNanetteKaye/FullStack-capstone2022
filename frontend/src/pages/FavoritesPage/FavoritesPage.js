@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios"
 import useAuth from "../../hooks/useAuth"
-import FavoriteArtistsTable from '../../components/FavoriteArtistsTable/FavoriteArtistsTable';
+import FavoriteArtistsTable from '../../components/FaveArtistsMapper/FaveArtistsMapper';
 
 const FavoritesPage = () => {
     const [user, token] = useAuth();
@@ -25,7 +25,7 @@ const FavoritesPage = () => {
 
     return (
         <div>
-            <FavoriteArtistsTable artists={artists} />
+            <FavoriteArtistsTable artists={artists} deleteArtistData = {getArtists} />
         </div>
     )
 }
