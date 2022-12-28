@@ -1,18 +1,24 @@
 import React from 'react';
-
-// const FavoriteArtistsTable = ({artistsData}) => {
-//     return ( 
-//     <div>
-
-//     </div>
-//     );
-// }
  
 export default function FavoriteArtistsTable(props) {
-    console.log(props.artists)
+    
+    const {faveArtists, artists} = props;
 
-    return (
-        <>
-        </>
-    )
+    if (artists.length > 0) {
+        return (
+            artists.map((artist, index) => {
+                console.log(artist);
+                return (
+                    <div key={artist.id}>
+                        <h3>{artist.artist_name}</h3>
+                        <button>Delete</button>
+                    </div>
+                )
+            })
+        )
+    } else {
+        return(
+            <h3>No fave artists</h3>
+        )
+    }
 }
