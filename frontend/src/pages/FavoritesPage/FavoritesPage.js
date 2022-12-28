@@ -3,28 +3,27 @@ import axios from "axios"
 import useAuth from "../../hooks/useAuth"
 
 const FavoritesPage = () => {
-    const [faveArtists, setFaveArtists] = useState([]);
     const [user, token] = useAuth();
+    const [artists, getArtists] = useState('')
 
-    useEffect(() => {
-        GetAllFaveArtists();
-    }, []);
-
-    async function GetAllFaveArtists() {
-        try {
-            let response = await axios.get(`http://127.0.0.1:8000/api/artists/${user}/`,
-            {
-                headers: {Authorization: "Bearer " + token},
-            });
-            setFaveArtists(response.data);
-        } catch (error) {
-            console.log(error.response.data)
-        }
+    const getAllArtists = () => {
+        axios.get(`http://127.0.0.1:8000/api/artists/${user}/`,
+        {
+            headers: {Authorization: "Bearer " + token},
+        }).then ((response) => {
+            const allArtists = response.data;
+            getArtists(allArtists)
+        })
+        .catch(error => console.log(error.response.data))
     }
 
+    useEffect(() => {
+        getAllArtists();
+    }, [])
 
     return (
         <div>
+            <FavoriteArtistsTable favoriteArtists = {artists} />
         </div>
     )
 }
