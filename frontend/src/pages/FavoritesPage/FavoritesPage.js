@@ -5,7 +5,8 @@ import FavoriteArtistsTable from '../../components/FaveArtistsMapper/FaveArtists
 
 const FavoritesPage = () => {
     const [user, token] = useAuth();
-    const [artists, getArtists] = useState('')
+    const [artists, getArtists] = useState([])
+    const [events, getEvents] = useState([])
 
     const getAllArtists = async () => {
         try {
@@ -19,13 +20,29 @@ const FavoritesPage = () => {
     }
     }
 
+    const getAllEvents = async () => {
+        try {
+            let response = await axios.get('http://127.0.0.1:8000/api/upcoming_events/',
+            {
+                headers: {Authorization: "Bearer " + token},
+            });
+            getEvents(response.data);
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
     useEffect(() => {
         getAllArtists();
+        getAllEvents();
     }, [])
 
     return (
         <div>
+            <h1>MUSIC</h1>
             <FavoriteArtistsTable artists={artists} deleteArtistData = {getArtists} />
+            <h1>EVENTS</h1>
+
         </div>
     )
 }

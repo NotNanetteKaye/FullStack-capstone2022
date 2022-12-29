@@ -10,7 +10,9 @@ export default function FavoriteArtistsTable(props) {
         return (
             artists.map((artist, index) => {
                 return (
-                    <FaveArtistPresenter key={artist.id} artist={artist} name={artist.artist_name} id={artist.id}/>
+                    <div>
+                        <FaveArtistPresenter key={artist.id} artist={artist} name={artist.artist_name} id={artist.id}/>
+                    </div>
                 )
             })
         )
