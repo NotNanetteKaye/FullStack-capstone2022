@@ -7,7 +7,7 @@ const FaveEventPresenter = (props) => {
 
     const DeleteFaveEvent = async (e) => {
         try {
-            const response = await axios.delete(``,
+            const response = await axios.delete(`http://127.0.0.1:8000/api/upcoming_events/${props.id}/`,
             {
                 headers: {Authorization: 'Bearer ' + token}
             })
@@ -18,7 +18,10 @@ const FaveEventPresenter = (props) => {
 
     return ( 
     <div>
-        {props.name}
+        <form onSubmit={DeleteFaveEvent}>
+            {props.name}
+            <button>Delete.</button>
+        </form>
     </div> );
 }
  

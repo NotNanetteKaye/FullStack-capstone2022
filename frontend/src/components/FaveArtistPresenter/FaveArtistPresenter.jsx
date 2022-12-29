@@ -21,7 +21,7 @@ const ArtistPresenter = (props) => {
         <div>
             <form onSubmit={DeleteFave}>
                 {props.name}
-                <button>Delete</button>
+                <button>Delete.</button>
             </form>
         </div>
      );
