@@ -1,7 +1,7 @@
 import React from 'react';
 import FaveArtistPresenter from '../FaveArtistPresenter/FaveArtistPresenter'
  
-export default function FavoriteArtistsTable(props) {
+export default function FaveArtistsMapper(props) {
     
     const {faveArtists, artists} = props;
 
