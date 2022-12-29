@@ -42,8 +42,8 @@ const FavoritesPage = () => {
         <div>
             <h1>MUSIC</h1>
             <FaveArtistsMapper artists={artists} deleteArtistData = {getArtists} />
-            <FaveEventsMapper events={events} />
             <h1>EVENTS</h1>
+            <FaveEventsMapper events={events} />
 
         </div>
     )
