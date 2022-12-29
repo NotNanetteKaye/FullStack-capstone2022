@@ -11,7 +11,7 @@ export default function FaveEventsMapper(props) {
             events.map((event, index) => {
                 return (
                     <div>
-                        <FaveEventPresenter key={event.id} event={event}/>
+                        <FaveEventPresenter key={event.index} name={event.title}/>
                     </div>
                 )
             })

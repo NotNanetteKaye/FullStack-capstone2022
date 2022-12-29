@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from "axios"
 import useAuth from "../../hooks/useAuth"
 import FaveArtistsMapper from '../../components/FaveArtistsMapper/FaveArtistsMapper';
+import FaveEventsMapper from '../../components/FaveEventsMapper/FaveEventsMapper';
 
 const FavoritesPage = () => {
     const [user, token] = useAuth();

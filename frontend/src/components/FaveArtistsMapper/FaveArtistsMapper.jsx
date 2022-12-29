@@ -11,7 +11,7 @@ export default function FaveArtistsMapper(props) {
             artists.map((artist, index) => {
                 return (
                     <div>
-                        <FaveArtistPresenter key={artist.id} artist={artist} name={artist.artist_name} id={artist.id}/>
+                        <FaveArtistPresenter key={artist.index} artist={artist} name={artist.artist_name} id={artist.id}/>
                     </div>
                 )
             })
