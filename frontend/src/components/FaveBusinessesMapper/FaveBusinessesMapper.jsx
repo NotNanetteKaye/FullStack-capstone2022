@@ -15,6 +15,10 @@ export default function FaveBusinessesMapper(props) {
                 )
             })
         )
+    } else {
+        return (
+            <h3>No saved businesses.</h3>
+        )
     }
 
 }
