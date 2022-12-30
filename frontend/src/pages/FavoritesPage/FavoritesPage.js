@@ -37,7 +37,7 @@ const FavoritesPage = () => {
 
     const getAllBusinesses = async () => {
         try {
-            let response = await axios.get('',
+            let response = await axios.get('http://127.0.0.1:8000/api/businesses/',
             {
                 headers: {Authorization: "Bearer " + token},
             });
