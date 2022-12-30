@@ -18,22 +18,22 @@ const Navbar = () => {
           )}
         </li>
         <li>
-          <Link to="/darlingdreams">Home</Link>
+          <Link to="/darlingdreams">HOME</Link>
         </li>
         <li>
-          <Link to="/food">Food</Link>
+          <Link to="/food">FOOD</Link>
         </li>
         <li>
-          <Link to="/business">Businesses</Link>
+          <Link to="/business">BUSINESSES</Link>
         </li>
         <li>
-          <Link to="/music">Music</Link>
+          <Link to="/music">MUSIC</Link>
         </li>
         <li>
-          <Link to="/events">Events</Link>
+          <Link to="/events">EVENTS</Link>
         </li>
         <li>
-          <Link to="/favorites">Your faves!</Link>
+          <Link to="/favorites">YOUR FAVES!</Link>
         </li>
       </ul>
     </div>
