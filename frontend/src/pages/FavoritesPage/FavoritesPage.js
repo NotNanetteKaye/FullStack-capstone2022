@@ -3,11 +3,13 @@ import axios from "axios"
 import useAuth from "../../hooks/useAuth"
 import FaveArtistsMapper from '../../components/FaveArtistsMapper/FaveArtistsMapper';
 import FaveEventsMapper from '../../components/FaveEventsMapper/FaveEventsMapper';
+import FaveBusinessesMapper from '../../components/FaveBusinessesMapper/FaveBusinessesMapper';
 
 const FavoritesPage = () => {
     const [user, token] = useAuth();
-    const [artists, getArtists] = useState([])
-    const [events, getEvents] = useState([])
+    const [artists, getArtists] = useState([]);
+    const [events, getEvents] = useState([]);
+    const [businesses, getBusinesses] = useState([]);
 
     const getAllArtists = async () => {
         try {
@@ -33,17 +35,32 @@ const FavoritesPage = () => {
         }
     }
 
+    const getAllBusinesses = async () => {
+        try {
+            let response = await axios.get('',
+            {
+                headers: {Authorization: "Bearer " + token},
+            });
+            getBusinesses(response.data);
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
     useEffect(() => {
         getAllArtists();
         getAllEvents();
+        getAllBusinesses();
     }, [])
 
     return (
         <div>
             <h1>MUSIC</h1>
-            <FaveArtistsMapper artists={artists} deleteArtistData = {getArtists} />
+            <FaveArtistsMapper artists={artists} />
             <h1>EVENTS</h1>
             <FaveEventsMapper events={events} />
+            <h1>BUSINESSES</h1>
+            <FaveBusinessesMapper businesses={businesses} />
 
         </div>
     )
