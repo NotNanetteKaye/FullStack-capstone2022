@@ -3,11 +3,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: #fff;
 }
 
 h1 {
     font: bold italic 2em Georgia, Times, "Times New Roman", serif;
     font-size: 80px;
+    mix-blend-mode: difference;
+    background-color: #fff;
 }
 
 h2 {
