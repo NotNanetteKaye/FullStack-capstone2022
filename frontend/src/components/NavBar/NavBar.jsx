@@ -9,12 +9,12 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="navBar">
-      <ul>
-        {user ? (
+              {user ? (
           <button onClick={logoutUser}>LOGOUT</button>
         ) : (
           <button onClick={() => navigate("/login")}>LOGIN</button>
         )}
+      <ul>
         <li>
         </li>
         <li>
