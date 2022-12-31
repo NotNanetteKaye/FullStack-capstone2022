@@ -1,31 +1,34 @@
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style-type: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #566056;
 }
 
+
+
 li {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
+  padding: 5mm;
 }
 
 .navBar {
-  background: white;
-  box-shadow: 4px 2px 5px gray;
-  color: #566056;
-  margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+  background: rgba(255, 254, 254, 0.933);
+  /* box-shadow: 4px 2px 5px gray; */
+  /* margin-bottom: 2rem; */
 }
 
-.navBar button {
-  background: transparent;
-  color: #566056;
-  padding: 0.4rem 0.5rem;
-}
+ .navBar button {
+  color: #393e39;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  font-size: 1.5rem
+} 
 
-.navBar button:hover {
-  background: white;
-  color: #566056;
+/* .navBar button:hover {
   cursor: pointer;
-}
+} */
 
