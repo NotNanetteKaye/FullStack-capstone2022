@@ -1,28 +1,33 @@
 .navBar {
-  background: rgba(255, 254, 254, 0.933);
+  background: rgba(255, 254, 254, 0.697);
   margin-bottom: 2rem;
   grid-template-columns: .7fr 1fr;
   display: grid;
+  padding: 4.2mm;
 }
 
 .navBar button {
-  color: #393e39;
-  font-size: 1.5rem;
+  color: #566056;
+  font-size: 1.6rem;
   margin-left: 5mm;
   font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
-ul {
+.navBar ul {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #566056;
+  text-decoration: none;
 }
 
-li {
-  font-size: 1.5rem;
+.navBar li a {
+  color: #566056;
+  text-decoration: none;
+  font-size: 1.6rem;
   padding: 5mm;
+  display: flex;
 }
 
 
