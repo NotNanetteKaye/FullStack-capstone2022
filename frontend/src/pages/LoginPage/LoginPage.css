@@ -11,3 +11,16 @@
   border-radius: 50px;
   margin-top: 40mm;
 }
+
+.container h1 {
+  font: bold italic 2em Georgia, Times, "Times New Roman", serif;
+  font-size: 120px;
+  mix-blend-mode: difference;
+  color: #566056;
+  margin-bottom: -5mm;
+}
+
+.container h2 {
+  font-size: 40px;
+  color: #877d85;
+}

@@ -20,6 +20,8 @@ const LoginPage = () => {
 
   return (
     <div className="container">
+      <h1>L  O  G  I  N</h1>
+      <h2>to see all your saved favorites.</h2>
       <form className="form" onSubmit={handleSubmit}>
         <label>
           Username:{" "}
