@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import EventsMapper from "../../components/EventsMapper/EventsMapper"
+import '../EventsPage/EventsPage.css'
 
 const EventsPage  = () => {
     const [events, setEvents] = useState([{
@@ -244,8 +245,8 @@ const EventsPage  = () => {
 
     return (
         <div className='eventspage'>
-          <h1 className='eventspagetitle'>BUSINESS</h1>
-          <h2 className='eventspagecaption'>Here you will find an array of black/brown-owned businesses in Texas.</h2>
+          <h1 className='eventspagetitle'>EVENTS</h1>
+          <h2 className='eventspagecaption'>Here you will find an array of Texas upcoming events that highlight black/brown communities.</h2>
             <EventsMapper events = {events} />
         </div>
     )

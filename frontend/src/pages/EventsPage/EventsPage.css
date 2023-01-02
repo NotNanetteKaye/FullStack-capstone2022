@@ -1,0 +1,19 @@
+.eventspage {
+    display: flex;
+}
+
+h1.eventspagetitle {
+    position: fixed;
+    margin-left: 237mm;
+    font: bold italic 11em Georgia, Times, "Times New Roman", serif;
+    color: #1a191847;
+    margin-top: -11mm;
+}
+
+h2.eventspagecaption {
+    position: fixed;
+    margin-left: 270mm;
+    font: bold italic 3em Georgia, Times, "Times New Roman", serif;
+    color: #1a191847;
+    margin-top: 35mm;
+}
