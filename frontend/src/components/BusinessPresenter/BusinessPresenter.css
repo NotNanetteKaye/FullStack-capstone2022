@@ -36,3 +36,9 @@ div .business {
     border-color: #A99FA9;
     color: white;
 }
+
+.business button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #8d8b8b;
+  }
