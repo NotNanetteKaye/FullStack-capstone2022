@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ArtistMapper from '../../components/ArtistMapper/ArtistMapper';
 import useAuth from "../../hooks/useAuth";
+import '../MusicPage/MusicPage.css'
 
 const MusicPage = () => {
     //State
@@ -642,13 +643,8 @@ const MusicPage = () => {
         }
     ]);
 
-    //Functionality
-
-    //Effects upon State Change
-
-    //Return JSX
     return (
-        <div>
+        <div className='musicpage'>
             <ArtistMapper artists= {artist} />
         </div>
     )

@@ -75,15 +75,6 @@ p {
   padding: 5mm;
 }
 
-.musicpage {
-  background-image: url(../../frontend/public/images/MusicPage.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #fff;
-  padding: 5mm;
-}
-
 .eventspage {
   background-image: url(../../frontend/public/images/EventsPage.png);
   background-repeat: no-repeat;
@@ -93,3 +84,11 @@ p {
   padding: 5mm;
 }
 
+.musicpage {
+  background-image: url(../../frontend/public/images/MusicPage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  padding: 5mm;
+}
