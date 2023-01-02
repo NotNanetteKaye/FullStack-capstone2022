@@ -1,12 +1,20 @@
 
 
 div .business {
-    background-color: pink;
+    background-color: #ded9d9a8;
     max-width: 140mm;
     border-radius: 50px;
     max-height: 4000mm;
+    margin: 15mm;
+    padding: 10mm;
 }
 
 .business h1 {
     font: bold 2em arial;
+    color: #586057;
+}
+
+.business img {
+    border-radius: 20px;
+    size: 500mm;
 }

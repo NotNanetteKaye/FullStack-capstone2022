@@ -35,11 +35,11 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
     return (
         <div className="business">
             <form onSubmit={handleSubmit}>
+                <img src={place.thumbnail} alt='' height='150px' width='200px'/>
                 <h1>{place.title}</h1>
                 <p>{place.type}</p>
                 <p>{place.hours}</p>
                 <p>{place.address}</p>
-                <img src={place.thumbnail} alt=''/>
                 <button type='submit'>Save me to your faves!</button>
             </form>
         </div>
