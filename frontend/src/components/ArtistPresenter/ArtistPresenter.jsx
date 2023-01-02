@@ -1,6 +1,7 @@
 import axios from "axios"
 import React, { useState } from 'react';
-import useAuth from "../../hooks/useAuth"
+import useAuth from "../../hooks/useAuth";
+import '../ArtistPresenter/ArtistPresenter.css';
 
 const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) => {
     const [user, token] = useAuth();
@@ -33,9 +34,9 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) =>
 
 
     return (
-        <div>
+        <div className='artist'>
             <form onSubmit={handleSubmit}>
-                <img src={artist.images[0]?.url} height={artist.images.height} width={artist.images.width} alt=''/>
+                <img src={artist.images[0]?.url} height='300px' width='320px' alt=''/>
                 <h1>{artist.name}</h1>
                 <p>Genre(s): {artist.genres}</p>
                 <p>Popularity: {artist.popularity}</p>

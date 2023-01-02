@@ -1,0 +1,37 @@
+div .artist {
+    background-color: #e7e6e6a8;
+    max-width: 170mm;
+    border-radius: 50px;
+    max-height: 4000mm;
+    margin: 15mm;
+    padding: 10mm;
+}
+
+.artist img {
+    border-radius: 20px;
+    size: 500mm;
+}
+
+.artist form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.artist button {
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    font: bold italic 1.2em Georgia, Times, "Times New Roman", serif;
+    margin-top: 5mm;
+    background-color: #adacaa33;
+    border-color: #2c2c2c68;
+    color: #000000d9;
+}
+
+.artist button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #918567;
+  }
