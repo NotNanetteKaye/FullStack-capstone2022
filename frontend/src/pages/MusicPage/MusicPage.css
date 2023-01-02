@@ -2,18 +2,18 @@
     display: flex;
 }
 
-h1.businesspagetitle {
+h1.musicpagetitle {
     position: fixed;
-    margin-left: 237mm;
+    margin-left: 290mm;
     font: bold italic 11em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: -11mm;
+    margin-top: -12mm;
 }
 
-h2.businesspagecaption {
+h2.musicpagecaption {
     position: fixed;
-    margin-left: 240mm;
+    margin-left: 260mm;
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: 35mm;
+    margin-top: 30mm;
 }

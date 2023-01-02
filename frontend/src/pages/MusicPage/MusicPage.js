@@ -645,6 +645,8 @@ const MusicPage = () => {
 
     return (
         <div className='musicpage'>
+          <h1 className='musicpagetitle'>MUSIC</h1>
+          <h2 className='musicpagecaption'>Here you will find an array of black/brown-owned musicians.</h2>
             <ArtistMapper artists= {artist} />
         </div>
     )
