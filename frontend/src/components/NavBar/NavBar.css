@@ -1,11 +1,15 @@
 .navBar {
   background: rgba(255, 254, 254, 0.933);
   margin-bottom: 2rem;
+  grid-template-columns: .7fr 1fr;
+  display: grid;
 }
 
 .navBar button {
   color: #393e39;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  margin-left: 5mm;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
 ul {
