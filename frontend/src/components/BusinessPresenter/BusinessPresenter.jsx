@@ -32,7 +32,7 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
         }
     }
     return (
-        <div>
+        <div className="food">
             <form onSubmit={handleSubmit}>
                 <h1>{place.title}</h1>
                 <p>{place.type}</p>
