@@ -58,6 +58,10 @@ p {
 }
 
 .foodpage {
-  background-color: #918566;
-  padding: 10mm;
+  background-image: url(../../frontend/public/images/FoodPage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  padding: 5mm;
 }

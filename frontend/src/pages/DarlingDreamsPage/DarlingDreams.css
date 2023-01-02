@@ -6,13 +6,18 @@ body {
     background-color: #fff;
 }
 
-h1 {
+.DarlingDreams h1 {
     font: bold italic 2em Georgia, Times, "Times New Roman", serif;
     font-size: 80px;
-    /* mix-blend-mode: difference; */
+    color: #403a40ab;
+    margin-top: 50mm;
+    margin-left: 10mm;
 }
 
-h2 {
+.DarlingDreams h2 {
     font: bold italic 2em Georgia, Times, "Times New Roman", serif;
     font-size: 40px; 
+    margin-left: 10mm;
+    max-width: 200mm;
+    color: #403a40ab;
 }
