@@ -11,7 +11,15 @@
   font-size: 1.6rem;
   margin-left: 5mm;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  border: transparent;
+  max-width: 100px;
+  background-color: transparent;
 } 
+
+.navBar button:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
 
 .navBar ul {
   display: flex;
@@ -28,6 +36,11 @@
   font-size: 1.6rem;
   padding: 5mm;
   display: flex;
+}
+
+.navBar li a:hover {
+  cursor: pointer;
+  background-color: rgba(236, 236, 236, 0.713);
 }
 
 

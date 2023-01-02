@@ -1,3 +1,13 @@
 .error {
   color: red;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: center;
+  background: #efefeff7;
+  padding: 200px;
+  border-radius: 50px;
+  margin-top: 40mm;
+}
