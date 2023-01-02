@@ -36,11 +36,11 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
         <div className="business">
             <form onSubmit={handleSubmit}>
                 <img src={place.thumbnail} alt='' height='150px' width='200px'/>
-                <h1>{place.title}</h1>
+                <h1 className="foodbusiness">{place.title}</h1>
                 <p>Business Type: {place.type}</p>
                 <p>{place.hours}</p>
                 <p>{place.address}</p>
-                <button type='submit'>Save me to your faves!</button>
+                <button type='submit' className="foodbusiness">Save me to your faves!</button>
             </form>
         </div>
     )
