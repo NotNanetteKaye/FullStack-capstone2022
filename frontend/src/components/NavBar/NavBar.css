@@ -1,5 +1,5 @@
 .navBar {
-  background: rgba(255, 254, 254, 0.697);
+  background: rgb(231 231 231);
   grid-template-columns: .7fr 1fr;
   display: grid;
   padding: 4.2mm;

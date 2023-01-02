@@ -484,7 +484,7 @@ const BusinessesPage = () => {
     ])
     
     return (
-        <div>
+        <div className='businesspage'>
           <BusinessMapper businesses = {businesses} />
         </div>
     )
