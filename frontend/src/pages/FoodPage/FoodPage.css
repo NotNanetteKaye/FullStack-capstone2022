@@ -1,4 +1,19 @@
 .foodpage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+}
+
+h1.foodpagetitle {
+    position: fixed;
+    margin-left: 260mm;
+    font: bold italic 17em Georgia, Times, "Times New Roman", serif;
+    color: #1a191882;
+    margin-top: -17mm;
+}
+
+h2.foodpagecaption {
+    position: fixed;
+    margin-left: 260mm;
+    font: bold italic 3em Georgia, Times, "Times New Roman", serif;
+    color: #1a191882;
+    margin-top: 50mm;
 }
