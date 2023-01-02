@@ -35,6 +35,12 @@
   color: white;
 }
 
+.container button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #bbb3bb;
+}
+
 .container a {
   font: italic 1.6em Georgia, Times, "Times New Roman", serif;
 }
