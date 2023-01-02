@@ -18,3 +18,21 @@ div .business {
     border-radius: 20px;
     size: 500mm;
 }
+
+.business form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.business button {
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    font: bold italic 1.2em Georgia, Times, "Times New Roman", serif;
+    margin-top: 5mm;
+    background-color: #a3a1a1;
+    border-color: #A99FA9;
+    color: white;
+}

@@ -37,7 +37,7 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
             <form onSubmit={handleSubmit}>
                 <img src={place.thumbnail} alt='' height='150px' width='200px'/>
                 <h1>{place.title}</h1>
-                <p>{place.type}</p>
+                <p>Business Type: {place.type}</p>
                 <p>{place.hours}</p>
                 <p>{place.address}</p>
                 <button type='submit'>Save me to your faves!</button>
