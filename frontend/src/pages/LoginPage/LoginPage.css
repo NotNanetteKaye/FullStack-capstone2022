@@ -21,8 +21,8 @@
 }
 
 .container h2 {
-  font-size: 40px;
   color: #877d85;
+  font: bold italic 2.5em Georgia, Times, "Times New Roman", serif;
 }
 
 .container button {
