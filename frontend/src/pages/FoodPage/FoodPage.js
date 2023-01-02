@@ -471,7 +471,7 @@ const FoodPage = () => {
 
 
     return (
-        <div>
+        <div className='foodpage'>
           <BusinessMapper businesses = {restaurants} />
         </div>
     )
