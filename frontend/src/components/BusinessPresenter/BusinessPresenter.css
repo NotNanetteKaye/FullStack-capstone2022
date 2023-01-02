@@ -1,0 +1,12 @@
+
+
+div .business {
+    background-color: pink;
+    max-width: 140mm;
+    border-radius: 50px;
+    max-height: 4000mm;
+}
+
+.business h1 {
+    font: bold 2em arial;
+}

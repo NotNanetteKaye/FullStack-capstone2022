@@ -1,6 +1,7 @@
 import axios from "axios"
 import React, { useState } from 'react';
 import useAuth from "../../hooks/useAuth"
+import './BusinessPresenter.css';
 
 const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
 
@@ -32,7 +33,7 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
         }
     }
     return (
-        <div className="food">
+        <div className="business">
             <form onSubmit={handleSubmit}>
                 <h1>{place.title}</h1>
                 <p>{place.type}</p>
