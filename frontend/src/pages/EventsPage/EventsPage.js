@@ -243,7 +243,9 @@ const EventsPage  = () => {
       }]);
 
     return (
-        <div>
+        <div className='eventspage'>
+          <h1 className='eventspagetitle'>BUSINESS</h1>
+          <h2 className='eventspagecaption'>Here you will find an array of black/brown-owned businesses in Texas.</h2>
             <EventsMapper events = {events} />
         </div>
     )
