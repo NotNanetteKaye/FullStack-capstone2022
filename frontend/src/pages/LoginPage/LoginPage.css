@@ -4,10 +4,10 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1400px;
   text-align: center;
   background: #efefeff7;
-  padding: 200px;
+  padding: 175px;
   border-radius: 50px;
   margin-top: 20mm;
 }
@@ -35,7 +35,9 @@
   color: white;
 }
 
-.cont
+.container a {
+  font: italic 1.6em Georgia, Times, "Times New Roman", serif;
+}
 
 .form input {
   width: 370px;

@@ -44,8 +44,8 @@ const LoginPage = () => {
         {isServerError ? (
           <p className="error">Login failed, incorrect credentials!</p>
         ) : null}
-         <button>Login!</button>
-        <Link to="/register">Click to register!</Link>
+         <button>Login</button>
+        <Link to="/register">click here to register</Link>
       </form>
     </div>
   );
