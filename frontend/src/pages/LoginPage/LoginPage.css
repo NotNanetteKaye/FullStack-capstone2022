@@ -9,7 +9,7 @@
   background: #efefeff7;
   padding: 200px;
   border-radius: 50px;
-  margin-top: 40mm;
+  margin-top: 20mm;
 }
 
 .container h1 {
@@ -23,6 +23,23 @@
 .container h2 {
   font-size: 40px;
   color: #877d85;
+}
+
+.container button {
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
+  font: bold italic 2em Georgia, Times, "Times New Roman", serif;
+  background-color: #A99FA9;
+  border-color: #A99FA9;
+  color: white;
+}
+
+.cont
+
+.form input {
+  width: 370px;
+  height: 30px;
 }
 
 label {
