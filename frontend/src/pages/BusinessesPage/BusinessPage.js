@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BusinessMapper from '../../components/BusinessMapper/BusinessMapper';
-
+import './BusinessesPage.css'
 
 const BusinessesPage = () => {
     const [businesses, setBusinesses] = useState([
@@ -485,6 +485,8 @@ const BusinessesPage = () => {
     
     return (
         <div className='businesspage'>
+          <h1 className='businesspagetitle'>BUSINESSES</h1>
+          <h2 className='businesspagecaption'>Here you will find an array of black/brown-owned businesses in Texas.</h2>
           <BusinessMapper businesses = {businesses} />
         </div>
     )

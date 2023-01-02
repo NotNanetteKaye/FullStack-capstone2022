@@ -474,7 +474,7 @@ const FoodPage = () => {
         <div className='foodpage'>
           <h1 className='foodpagetitle'>FOOD</h1>
           <h2 className='foodpagecaption'>Here you will find an array of black/brown-owned restaurants in Texas.</h2>
-          <BusinessMapper businesses = {restaurants} />
+          <BusinessMapper businesses = {restaurants} className='foodbusiness'/>
         </div>
     )
 }

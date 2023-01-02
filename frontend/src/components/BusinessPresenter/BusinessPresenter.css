@@ -1,7 +1,7 @@
 
 
 div .business {
-    background-color: #ded9d9a8;
+    background-color: #e7e6e6a8;
     max-width: 140mm;
     border-radius: 50px;
     max-height: 4000mm;
@@ -9,11 +9,11 @@ div .business {
     padding: 10mm;
 }
 
-h1.foodbusiness {
+/* h1.foodpage {
     font: bold 2em arial;
     color: #423d2e;
     margin-top: 5mm;
-}
+} */
 
 .business img {
     border-radius: 20px;
@@ -33,9 +33,9 @@ button.foodbusiness {
     border-radius: 50px;
     font: bold italic 1.2em Georgia, Times, "Times New Roman", serif;
     margin-top: 5mm;
-    background-color: #918567;
-    border-color: #918567;
-    color: white;
+    background-color: #adacaa33;
+    border-color: #2c2c2c68;
+    color: #000000d9;
 }
 
 .foodbusiness button:hover {
