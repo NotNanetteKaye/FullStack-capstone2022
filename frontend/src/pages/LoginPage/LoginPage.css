@@ -24,3 +24,10 @@
   font-size: 40px;
   color: #877d85;
 }
+
+label {
+  display: inline-flex;
+  margin-top: 20px;
+  font: 2em Georgia, Times, "Times New Roman", serif;
+  color: #676363;
+}

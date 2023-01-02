@@ -23,7 +23,7 @@ const LoginPage = () => {
       <h1>L  O  G  I  N</h1>
       <h2>to see all your saved favorites.</h2>
       <form className="form" onSubmit={handleSubmit}>
-        <label>
+        <label className="Field">
           Username:{" "}
           <input
             type="text"
@@ -32,7 +32,7 @@ const LoginPage = () => {
             onChange={handleInputChange}
           />
         </label>
-        <label>
+        <label className="Field">
           Password:{" "}
           <input
             type="text"
