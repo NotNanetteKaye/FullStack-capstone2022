@@ -10,7 +10,7 @@ export default function FaveBusinessesMapper(props) {
             businesses.map((business, index) => {
                 return (
                     <div>
-                        <FaveBusinessPresenter key={business.index} id={business.id} name={business.title} />
+                        <FaveBusinessPresenter key={business.index} id={business.id} name={business.title} pic={business.thumbnail} />
                     </div>
                 )
             })
