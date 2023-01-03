@@ -14,6 +14,14 @@ const Navbar = () => {
         ) : (
           <button onClick={() => navigate("/login")}>LOGIN</button>
         )}
+
+              {user ? (
+          <button onClick={() => navigate("/favorites")}>FAVORITES</button>
+        ) : (
+          <button onClick={() => navigate("/favorites")}>FAVORITES</button>
+        )}
+
+        
       <ul>
         <li>
         </li>

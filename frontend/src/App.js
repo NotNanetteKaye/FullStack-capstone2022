@@ -41,6 +41,14 @@ function App() {
         <Route path="/business" element={<BusinessPage />}/>
         <Route path="/events" element={<EventsPage />}/>
         <Route path="/darlingdreams" element={<DarlingDreamsPage />}/>
+        <Route
+          path="/favorites"
+          element={
+            <PrivateRoute>
+              <FavoritesPage />
+            </PrivateRoute>
+          }
+        />
       </Routes>
       <Footer />
     </div>

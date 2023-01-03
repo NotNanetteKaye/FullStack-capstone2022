@@ -1,10 +1,13 @@
 .navBar {
   background: rgb(231 231 231);
-  grid-template-columns: .7fr 1fr;
-  display: grid;
   padding: 4.2mm;
   position: fixed;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .navBar button {
@@ -13,7 +16,7 @@
   margin-left: 5mm;
   font-family: Georgia, 'Times New Roman', Times, serif;
   border: transparent;
-  max-width: 100px;
+  max-width: 100%;
   background-color: transparent;
 } 
 
