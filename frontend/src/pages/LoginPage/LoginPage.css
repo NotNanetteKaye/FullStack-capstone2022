@@ -2,14 +2,20 @@
   color: red;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1400px;
+.loginPage {
   text-align: center;
   background: #efefeff7;
-  padding: 175px;
   border-radius: 50px;
-  margin-top: 20mm;
+  margin-top: 80mm;
+  height: 145mm;
+}
+
+.container {
+  margin: 0 auto;
+  /* max-width: 600px; */
+  overflow: auto;
+  /* text-align: center; */
+  max-height: 100%;
 }
 
 .container h1 {

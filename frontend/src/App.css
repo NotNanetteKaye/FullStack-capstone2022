@@ -102,6 +102,15 @@ p {
   padding: 5mm;
 }
 
+.container {
+  background-image: url(../../frontend/public/images/giulia-may-cNtMy74-mnI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  padding: 5mm;
+}
+
 .favoritespage {
   background-repeat: no-repeat;
   background-attachment: fixed;
