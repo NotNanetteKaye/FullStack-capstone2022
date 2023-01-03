@@ -6,16 +6,20 @@
   text-align: center;
   background: #efefeff7;
   border-radius: 50px;
-  margin-top: 80mm;
-  height: 145mm;
+  margin-top: 70mm;
+  height: 130mm;
+  margin-left: 100mm;
+  width: 300mm;
 }
 
 .container {
   margin: 0 auto;
-  /* max-width: 600px; */
+  max-width: 100%;
   overflow: auto;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
   /* text-align: center; */
-  max-height: 100%;
 }
 
 .container h1 {
@@ -61,4 +65,15 @@ label {
   margin-top: 20px;
   font: 2em Georgia, Times, "Times New Roman", serif;
   color: #676363;
+}
+
+#fixed {
+  height: 100%;
+  /* margin-top: 17mm;
+  margin-left: -6mm; */
+}
+
+#remaining {
+  flex-grow: 1;
+  height: 57mm;
 }

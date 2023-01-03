@@ -20,11 +20,12 @@ const LoginPage = () => {
 
   return (
     <div className="container">
-      <div className="loginPage">
+      <div id="fixed">
+        <div className="loginPage">
         <div className="loginPageContent">
-          <h1>L  O  G  I  N</h1>
-          <h2>to see all your saved favorites.</h2>
-          <form className="form" onSubmit={handleSubmit}>
+            <h1>L  O  G  I  N</h1>
+            <h2>to see all your saved favorites.</h2>
+            <form className="form" onSubmit={handleSubmit}>
             <label className="Field">
               Username:{" "}
               <input
@@ -48,9 +49,11 @@ const LoginPage = () => {
             ) : null}
             <button>Login</button>
             <Link to="/register">click here to register</Link>
-          </form>
+            </form>
         </div>
       </div>
+      </div>
+      <div id="remaining"></div>
     </div>
   );
 };
