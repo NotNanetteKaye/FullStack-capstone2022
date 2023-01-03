@@ -1,11 +1,41 @@
 h3 {
-    font-size: 10mm;
+    font-size: 7mm;
     color: #625a62;
 }
 
+.favePresenters form {
+    display: flex;
+}
+
+.favePresenters .left img {
+    border-radius: 100mm;
+}
+
+.favePresenters .title {
+    margin-left: 5mm;
+}
+
+.favePresenters .button {
+    margin-inline: 30mm;
+    margin-top: -7mm;
+}
+
+.together {
+    display: grid;
+    margin-bottom: 10mm;
+    grid-template-columns: repeat(2, minmax(1rem,auto));
+    grid-template-areas:
+        'left'
+        'title'
+        'button';
+    
+}
+
 .faveDiv button {
+    /* position: absolute; */
+    /* margin-top: -18mm; */
     height: 30px;
-    width: 250px;
+    width: 175px;
     border-radius: 50px;
     font: bold italic 1.5em Georgia, Times, "Times New Roman", serif;
     /* margin-top: 0; */

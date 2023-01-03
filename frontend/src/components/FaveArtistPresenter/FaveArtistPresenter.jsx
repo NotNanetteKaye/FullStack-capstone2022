@@ -20,10 +20,19 @@ const ArtistPresenter = (props) => {
 
     return ( 
         <div>
-            <form onSubmit={DeleteFave}>
-                <h3>{props.name}</h3>
-                <div className="faveDiv">
-                    <button>Delete.</button>
+            <form onSubmit={DeleteFave} className='favePresenters'>
+                <div className="together">
+                    <div className="left">
+                        <img src={props.pic} alt='' height='100mm' width='120mm'/>
+                    </div>
+                    <div className="title">
+                        <h3>{props.name}</h3>
+                    </div>
+                    <div className="button">
+                        <div className="faveDiv">
+                            <button>Delete.</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
