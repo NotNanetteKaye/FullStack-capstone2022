@@ -92,3 +92,12 @@ p {
   background-color: #fff;
   padding: 5mm;
 }
+
+.favoritespage {
+  background-image: url(../../frontend/public/images/FavoritesPage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  padding: 5mm;
+}
