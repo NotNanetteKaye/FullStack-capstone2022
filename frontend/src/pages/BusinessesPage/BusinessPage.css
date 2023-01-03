@@ -7,7 +7,7 @@ h1.businesspagetitle {
     margin-left: 237mm;
     font: bold italic 11em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: -11mm;
+    margin-top: 15mm;
 }
 
 h2.businesspagecaption {
@@ -15,5 +15,5 @@ h2.businesspagecaption {
     margin-left: 240mm;
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: 35mm;
+    margin-top: 60mm;
 }
