@@ -4,6 +4,9 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 
 .DarlingDreams h1 {
@@ -20,4 +23,15 @@
     margin-left: 10mm;
     max-width: 200mm;
     color: #403a40ab;
+}
+
+#fixed {
+    height: 100%;
+    margin-top: 17mm;
+    margin-left: -6mm;
+}
+
+#remaining {
+    flex-grow: 1;
+    height: 149mm;
 }
