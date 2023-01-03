@@ -29,6 +29,7 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) =>
         console.log(newFaveArtist);
         } catch (error) {
          console.log(error.response);
+         alert("Need to be logged in order to save");
         }
     }
 

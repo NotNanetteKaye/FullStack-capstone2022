@@ -13,7 +13,8 @@ const ArtistPresenter = (props) => {
                 headers: {Authorization: 'Bearer ' + token},
             });
         } catch (error) {
-            console.log(error.data)
+            console.log(error.data);
+            alert("Need to be logged in order to save");
         } 
     }
 

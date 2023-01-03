@@ -30,7 +30,8 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
         }
         console.log(newFaveEvent)
         } catch (error) {
-            console.log(error.response)
+            console.log(error.response);
+            alert("Need to be logged in order to save");
         }
     }
 

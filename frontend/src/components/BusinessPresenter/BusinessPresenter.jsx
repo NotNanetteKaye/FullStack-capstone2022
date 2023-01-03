@@ -30,6 +30,7 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
         console.log(newFaveBusiness);
         } catch (error) {
          console.log(error.response);
+         alert("Need to be logged in order to save");
         }
     }
     return (

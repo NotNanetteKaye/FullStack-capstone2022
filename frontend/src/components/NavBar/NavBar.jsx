@@ -32,9 +32,9 @@ const Navbar = () => {
         <li>
           <Link to="/events">EVENTS</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/favorites">YOUR FAVES!</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

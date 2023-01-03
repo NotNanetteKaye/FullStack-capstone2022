@@ -3,6 +3,8 @@
   grid-template-columns: .7fr 1fr;
   display: grid;
   padding: 4.2mm;
+  position: fixed;
+  width: 100%;
 }
 
 .navBar button {
