@@ -7,7 +7,7 @@ h1.foodpagetitle {
     margin-left: 260mm;
     font: bold italic 17em Georgia, Times, "Times New Roman", serif;
     color: #1a191882;
-    margin-top: -17mm;
+    margin-top: 10mm;
 }
 
 h2.foodpagecaption {
@@ -15,5 +15,5 @@ h2.foodpagecaption {
     margin-left: 260mm;
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #1a191882;
-    margin-top: 50mm;
+    margin-top: 80mm;
 }
