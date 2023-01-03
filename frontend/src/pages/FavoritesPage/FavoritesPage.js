@@ -54,7 +54,9 @@ const FavoritesPage = () => {
     }, [])
 
     return (
-        <div>
+        <div className='favoritespage'>
+            <h1>{user.username}'s FAVORITES!</h1>
+            <h2>Find all your favorites below:</h2>
             <h1>MUSIC</h1>
             <FaveArtistsMapper artists={artists} />
             <h1>EVENTS</h1>

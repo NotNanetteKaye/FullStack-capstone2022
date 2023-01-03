@@ -27,7 +27,7 @@ div .business {
     align-items: center;
 }
 
-button.foodbusiness {
+button.specificbusiness {
     height: 40px;
     width: 300px;
     border-radius: 50px;
@@ -38,8 +38,8 @@ button.foodbusiness {
     color: #000000d9;
 }
 
-.foodbusiness button:hover {
+.specificbusiness button:hover {
     cursor: pointer;
     color: white;
-    background-color: #918567;
+    background-color: #897f67;
   }
