@@ -7,7 +7,7 @@ h1.musicpagetitle {
     margin-left: 298mm;
     font: bold italic 11em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: -12mm;
+    margin-top: 15mm;
 }
 
 h2.musicpagecaption {
@@ -15,5 +15,5 @@ h2.musicpagecaption {
     margin-left: 260mm;
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: 30mm;
+    margin-top: 60mm;
 }
