@@ -1,0 +1,48 @@
+.favoritespage {
+    display: grid;
+    grid-template-areas: 'heading' 'faves';
+    background-image: url('../../../public/images/giulia-may-cNtMy74-mnI-unsplash.jpg');
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 100%;
+    grid-area: heading;
+}
+
+.faves {
+    grid-area: faves;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, minmax(auto,auto));
+    grid-template-areas: "left middle right";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #a99fa9;
+    padding: 5mm;
+}
+
+.faves .left {
+    grid-area: left;
+}
+
+.faves .middle {
+    grid-area: middle;
+}
+
+.faves .right {
+    grid-area: right;
+}
+
+.favoritespage h1 {
+    font: bold italic 3.4em Georgia, Times, "Times New Roman", serif;
+    color: #443d44b3;
+}
+
+.favoritespage h2 {
+    font: bold italic 3em Georgia, Times, "Times New Roman", serif;
+    color: #443d44b3;
+    margin-bottom: 1mm;
+    margin-top: 20mm;
+}

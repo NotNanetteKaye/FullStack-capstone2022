@@ -93,11 +93,19 @@ p {
   padding: 5mm;
 }
 
-.favoritespage {
-  background-image: url(../../frontend/public/images/FavoritesPage.png);
+.DarlingDreams {
+  background-image: url(../../frontend/public/images/giulia-may-cNtMy74-mnI-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #fff;
+  padding: 5mm;
+}
+
+.favoritespage {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #a99fa9;
   padding: 5mm;
 }

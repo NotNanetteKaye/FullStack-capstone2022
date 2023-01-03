@@ -4,6 +4,7 @@ import useAuth from "../../hooks/useAuth"
 import FaveArtistsMapper from '../../components/FaveArtistsMapper/FaveArtistsMapper';
 import FaveEventsMapper from '../../components/FaveEventsMapper/FaveEventsMapper';
 import FaveBusinessesMapper from '../../components/FaveBusinessesMapper/FaveBusinessesMapper';
+import '../FavoritesPage/FavoritesPage.css'
 
 const FavoritesPage = () => {
     const [user, token] = useAuth();
@@ -55,15 +56,22 @@ const FavoritesPage = () => {
 
     return (
         <div className='favoritespage'>
-            <h1>{user.username}'s FAVORITES!</h1>
-            <h2>Find all your favorites below:</h2>
-            <h1>MUSIC</h1>
-            <FaveArtistsMapper artists={artists} />
-            <h1>EVENTS</h1>
-            <FaveEventsMapper events={events} />
-            <h1>BUSINESSES</h1>
-            <FaveBusinessesMapper businesses={businesses} />
-
+            <h1 className='header'>{user.username}'s FAVORITES!</h1>
+            <h2 className='header'>Find all your favorites below.</h2>
+            <div className='faves'>
+                <div className='left'>
+                    <h1>MUSIC</h1>
+                    <FaveArtistsMapper artists={artists} />
+                </div>
+                <div className='middle'>
+                    <h1>EVENTS</h1>
+                    <FaveEventsMapper events={events} />
+                </div>
+                <div className='right'>
+                    <h1>BUSINESSES</h1>
+                    <FaveBusinessesMapper businesses={businesses} />
+                </div>
+            </div>
         </div>
     )
 }
