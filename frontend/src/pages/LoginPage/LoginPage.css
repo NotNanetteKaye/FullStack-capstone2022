@@ -12,6 +12,10 @@
   width: 300mm;
 }
 
+.loginPageContent {
+  height: 100%
+}
+
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -75,5 +79,23 @@ label {
 
 #remaining {
   flex-grow: 1;
-  height: 57mm;
+  height: 60mm;
+}
+
+#fixed2 {
+  height: 170mm;
+  margin-top: 60mm;
+  margin-left: 130mm;
+  background: #cdc9cd;
+  width: 240mm;
+  border-radius: 20mm;
+}
+
+#fixed2 form {
+  margin-top: 17mm;
+}
+
+#remaining2 {
+  flex-grow: 1;
+  height: 47mm;
 }

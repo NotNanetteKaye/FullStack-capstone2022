@@ -18,7 +18,8 @@ const RegisterPage = () => {
 
   return (
     <div className="container">
-      <form className="form" onSubmit={handleSubmit}>
+      <div id="fixed2">
+        <form className="form" onSubmit={handleSubmit}>
         <label>
           Username:{" "}
           <input
@@ -69,7 +70,9 @@ const RegisterPage = () => {
           special characters!
         </p>
         <button>Register!</button>
-      </form>
+        </form>
+      </div>
+      <div id="remaining2"></div>
     </div>
   );
 };
