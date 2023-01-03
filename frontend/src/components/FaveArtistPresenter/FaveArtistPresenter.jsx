@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 import '../FaveArtistPresenter/FaveArtistPresenter.css'
+
 const ArtistPresenter = (props) => {
     const [user, token] = useAuth();
 
@@ -21,8 +22,9 @@ const ArtistPresenter = (props) => {
         <div>
             <form onSubmit={DeleteFave}>
                 <h3>{props.name}</h3>
-                <img src={props.pic} alt="" />
-                <button>Delete.</button>
+                <div className="faveDiv">
+                    <button>Delete.</button>
+                </div>
             </form>
         </div>
      );

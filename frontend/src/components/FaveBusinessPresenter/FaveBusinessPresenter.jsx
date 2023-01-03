@@ -22,7 +22,9 @@ const FaveBusinessPresenter = (props) => {
         <div>
             <form onSubmit={DeleteFaveBusiness}>
                 <h3>{props.name}</h3>
-                <button>Delete.</button>
+                <div className="faveDiv">
+                    <button>Delete.</button>
+                </div>
             </form>
         </div>
      );

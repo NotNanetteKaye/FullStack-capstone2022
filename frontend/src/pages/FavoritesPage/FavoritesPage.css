@@ -30,9 +30,11 @@
 .faves .mapper {
     background-color: white;
     background-color: #f1f1f161;
-    width: 85mm;
-    border-radius: 3mm;
+    width: 100mm;
+    border-radius: 27mm;
     margin-left: 40mm;
+    padding: 20mm;
+    margin-top: 15mm;
 }
 
 .faves h1 {

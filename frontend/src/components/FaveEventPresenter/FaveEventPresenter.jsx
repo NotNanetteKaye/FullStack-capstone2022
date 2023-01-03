@@ -21,7 +21,9 @@ const FaveEventPresenter = (props) => {
     <div>
         <form onSubmit={DeleteFaveEvent}>
             <h3>{props.name}</h3>
-            <button>Delete.</button>
+            <div className="faveDiv">
+                <button>Delete.</button>
+            </div>
         </form>
     </div> );
 }
