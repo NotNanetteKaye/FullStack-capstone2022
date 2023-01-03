@@ -11,6 +11,7 @@
     color: #443d44b3;
 }
 
+
 .faves {
     grid-area: faves;
     display: grid;
@@ -58,13 +59,14 @@
 
 .favoritespage h1 {
     font: bold italic 3.4em Georgia, Times, "Times New Roman", serif;
+    margin-top: 27mm;
 }
 
 .favoritespage h2 {
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #443d44b3;
-    margin-bottom: 1mm;
-    margin-top: 15mm;
+    margin-bottom: 10mm;
+    margin-top: 45mm;
 }
 
 .favePresenters h3 {
