@@ -7,7 +7,7 @@ h1.eventspagetitle {
     margin-left: 280mm;
     font: bold italic 11em Georgia, Times, "Times New Roman", serif;
     color: #1a191847;
-    margin-top: -11mm;
+    margin-top: 15mm;
 }
 
 h2.eventspagecaption {
@@ -15,5 +15,5 @@ h2.eventspagecaption {
     margin-left: 250mm;
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #1a19185c;
-    margin-top: 35mm;
+    margin-top: 60mm;
 }
