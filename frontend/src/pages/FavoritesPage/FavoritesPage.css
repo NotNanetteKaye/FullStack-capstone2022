@@ -1,6 +1,6 @@
 .favoritespage {
     display: grid;
-    grid-template-areas: 'heading' 'faves';
+    grid-template-areas: 'heading' 'faves' 'remaining';
     background-image: url('../../../public/images/giulia-may-cNtMy74-mnI-unsplash.jpg');
     background-repeat: no-repeat;
 }
@@ -9,6 +9,10 @@
     width: 100%;
     grid-area: heading;
     color: #443d44b3;
+}
+
+.remaining {
+    height: 99mm;
 }
 
 

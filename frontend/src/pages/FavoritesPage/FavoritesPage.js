@@ -59,25 +59,26 @@ const FavoritesPage = () => {
             <h1 className='header'>{user.username}'s FAVORITES!</h1>
             <h2 className='header'>Find all your favorites below.</h2>
             <div className='faves'>
-                <div className='left'>
-                    <h1>MUSIC</h1>
-                    <div className='mapper'>
-                        <FaveArtistsMapper artists={artists}/>
-                    </div>
-                </div>
-                <div className='middle'>
-                    <h1>EVENTS</h1>
-                    <div className='mapper'>
-                        <FaveEventsMapper events={events} />
-                    </div>
-                </div>
-                <div className='right'>
-                    <h1>BUSINESSES</h1>
-                    <div className='mapper'>
-                        <FaveBusinessesMapper businesses={businesses} />
-                    </div>
+            <div className='left'>
+                <h1>MUSIC</h1>
+                <div className='mapper'>
+                    <FaveArtistsMapper artists={artists}/>
                 </div>
             </div>
+            <div className='middle'>
+                <h1>EVENTS</h1>
+                <div className='mapper'>
+                    <FaveEventsMapper events={events} />
+                </div>
+            </div>
+            <div className='right'>
+                <h1>BUSINESSES</h1>
+                <div className='mapper'>
+                    <FaveBusinessesMapper businesses={businesses} />
+                </div>
+            </div>
+            </div>
+            <div className='remaining'></div>
         </div>
     )
 }
