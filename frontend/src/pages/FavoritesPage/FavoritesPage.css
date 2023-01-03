@@ -27,6 +27,22 @@
     grid-area: left;
 }
 
+.faves .mapper {
+    background-color: white;
+    background-color: #f1f1f161;
+    width: 85mm;
+    border-radius: 3mm;
+    margin-left: 40mm;
+}
+
+.faves h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #625a62;
+}
+
 .faves .middle {
     grid-area: middle;
 }

@@ -61,15 +61,21 @@ const FavoritesPage = () => {
             <div className='faves'>
                 <div className='left'>
                     <h1>MUSIC</h1>
-                    <FaveArtistsMapper artists={artists} />
+                    <div className='mapper'>
+                        <FaveArtistsMapper artists={artists}/>
+                    </div>
                 </div>
                 <div className='middle'>
                     <h1>EVENTS</h1>
-                    <FaveEventsMapper events={events} />
+                    <div className='mapper'>
+                        <FaveEventsMapper events={events} />
+                    </div>
                 </div>
                 <div className='right'>
                     <h1>BUSINESSES</h1>
-                    <FaveBusinessesMapper businesses={businesses} />
+                    <div className='mapper'>
+                        <FaveBusinessesMapper businesses={businesses} />
+                    </div>
                 </div>
             </div>
         </div>
