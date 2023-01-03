@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios'
 import useAuth from '../../hooks/useAuth';
+import '../EventsPresenter/EventsPresenter.css'
 
 const EventsPresenter = ({event, title, when, address, description, image, link}) => {
 
@@ -34,15 +35,15 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
     }
 
     return (
-        <div>
+        <div className='events'>
             <form onSubmit={handleSubmit}>
-                <h1>{event.title}</h1>
+                <h1 className='eventsbusiness'>{event.title}</h1>
                 <p>{event.date.when}</p>
                 <p>{event.address[0]}</p>
                 <p>{event.description}</p>
                 <p>{event.link}</p>
                 <img src={event.image} alt=''/>
-                <button type='submit'>Save me to your faves!</button>
+                <button type='submit' className='eventsbusiness'>Save me to your faves!</button>
             </form>
         </div>
     )
