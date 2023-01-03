@@ -1,6 +1,7 @@
 import React, { useImperativeHandle } from 'react';
 import axios from 'axios';
 import useAuth from '../../hooks/useAuth';
+import '../FaveArtistPresenter/FaveArtistPresenter.css'
 
 const FaveEventPresenter = (props) => {
     const [user, token] = useAuth('')
@@ -19,7 +20,7 @@ const FaveEventPresenter = (props) => {
     return ( 
     <div>
         <form onSubmit={DeleteFaveEvent}>
-            {props.name}
+            <h3>{props.name}</h3>
             <button>Delete.</button>
         </form>
     </div> );
