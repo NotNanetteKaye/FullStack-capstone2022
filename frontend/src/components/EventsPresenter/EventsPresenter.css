@@ -1,0 +1,51 @@
+div .events {
+    background-color: #e7e6e6a8;
+    max-width: 190mm;
+    border-radius: 50px;
+    max-height: 4000mm;
+    margin: 15mm;
+    padding: 10mm;
+}
+
+/* h1.foodpage {
+    font: bold 2em arial;
+    color: #423d2e;
+    margin-top: 5mm;
+} */
+
+.events img {
+    border-radius: 20px;
+    size: 500mm;
+}
+
+.events form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+button.eventsbusiness {
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    font: bold italic 1.2em Georgia, Times, "Times New Roman", serif;
+    margin-top: 5mm;
+    background-color: #adacaa33;
+    border-color: #2c2c2c68;
+    color: #000000d9;
+}
+
+.events button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #8198a9;
+  }
+
+h1.eventsbusiness {
+    font-size: 7mm;
+}
+
+.events p {
+    font-size: 5mm;
+}

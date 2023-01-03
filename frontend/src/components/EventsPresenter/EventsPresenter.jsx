@@ -37,12 +37,12 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
     return (
         <div className='events'>
             <form onSubmit={handleSubmit}>
+                <img src={event.image} alt=''/>
                 <h1 className='eventsbusiness'>{event.title}</h1>
                 <p>{event.date.when}</p>
                 <p>{event.address[0]}</p>
                 <p>{event.description}</p>
                 <p>{event.link}</p>
-                <img src={event.image} alt=''/>
                 <button type='submit' className='eventsbusiness'>Save me to your faves!</button>
             </form>
         </div>
