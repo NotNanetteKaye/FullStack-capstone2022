@@ -18,7 +18,7 @@ export default function FaveArtistsMapper(props) {
         )
     } else {
         return(
-            <h3>No fave artists</h3>
+            <h3>No saved artists</h3>
         )
     }
 }
