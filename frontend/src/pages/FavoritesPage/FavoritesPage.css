@@ -8,6 +8,7 @@
 .header {
     width: 100%;
     grid-area: heading;
+    color: #443d44b3;
 }
 
 .faves {
@@ -32,9 +33,9 @@
     background-color: #f1f1f161;
     width: 120mm;
     border-radius: 27mm;
-    margin-left: 40mm;
+    margin-left: 15mm;
     padding: 20mm;
-    margin-top: 15mm;
+    margin-top: 5mm;
 }
 
 .faves h1 {
@@ -42,7 +43,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: #625a62;
+    color: #523e52b8;
+    margin-left: 3mm;
+    margin-top: 10mm;
 }
 
 .faves .middle {
@@ -55,12 +58,15 @@
 
 .favoritespage h1 {
     font: bold italic 3.4em Georgia, Times, "Times New Roman", serif;
-    color: #443d44b3;
 }
 
 .favoritespage h2 {
     font: bold italic 3em Georgia, Times, "Times New Roman", serif;
     color: #443d44b3;
     margin-bottom: 1mm;
-    margin-top: 20mm;
+    margin-top: 15mm;
+}
+
+.favePresenters h3 {
+    margin-bottom: 10mm;
 }
