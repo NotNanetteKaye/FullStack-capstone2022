@@ -9,6 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="navBar">
+      <div className="navBarButtons">
               {user ? (
           <button onClick={logoutUser}>LOGOUT</button>
         ) : (
@@ -20,6 +21,7 @@ const Navbar = () => {
         ) : (
           <button onClick={() => navigate("/favorites")}>FAVORITES</button>
         )}
+      </div>
 
         
       <ul>

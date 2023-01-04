@@ -6,8 +6,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: row;
+}
+
+.navBarButtons {
+  position: absolute;
+  margin-right: 420mm;
+  margin-top: 5mm;
 }
 
 .navBar button {
