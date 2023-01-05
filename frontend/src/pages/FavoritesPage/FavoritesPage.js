@@ -14,7 +14,7 @@ const FavoritesPage = () => {
 
     const getAllArtists = async () => {
         try {
-            let response = await axios.get('http://127.0.0.1:8000/api/artists/', 
+            let response = await axios.get(`http://127.0.0.1:8000/api/artists/${user.id}/`, 
             {
                 headers: {Authorization: "Bearer " + token},
             });
@@ -26,7 +26,7 @@ const FavoritesPage = () => {
 
     const getAllEvents = async () => {
         try {
-            let response = await axios.get('http://127.0.0.1:8000/api/upcoming_events/',
+            let response = await axios.get(`http://127.0.0.1:8000/api/upcoming_events/${user.id}`,
             {
                 headers: {Authorization: "Bearer " + token},
             });
@@ -38,7 +38,7 @@ const FavoritesPage = () => {
 
     const getAllBusinesses = async () => {
         try {
-            let response = await axios.get('http://127.0.0.1:8000/api/businesses/',
+            let response = await axios.get(`http://127.0.0.1:8000/api/businesses/${user.id}`,
             {
                 headers: {Authorization: "Bearer " + token},
             });
