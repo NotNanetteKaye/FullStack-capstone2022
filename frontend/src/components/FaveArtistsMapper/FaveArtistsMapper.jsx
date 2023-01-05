@@ -1,5 +1,6 @@
 import React from 'react';
 import FaveArtistPresenter from '../FaveArtistPresenter/FaveArtistPresenter'
+import ArtistPresenter from '../ArtistPresenter/ArtistPresenter';
  
 export default function FaveArtistsMapper(props) {
     

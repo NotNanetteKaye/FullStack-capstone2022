@@ -22,7 +22,7 @@ def artist_list(request):
         serializer.save()
         return Response(serializer.errors, status=status.HTTP_201_CREATED)
 
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view(['GET', 'PUT', 'POST', 'DELETE'])
 @permission_classes([IsAuthenticated])
 def artist_detail(request, pk):
     print(

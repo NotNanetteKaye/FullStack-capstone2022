@@ -14,10 +14,10 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) =>
             artist_name: artist_name ,
             genre: genre,
             URI: link,
-            user_id: 1 ,
+            user_id: `${user.id}` ,
         };
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/artists/', 
+            const response = await axios.post(`http://127.0.0.1:8000/api/artists/`, 
             newFaveArtist, 
             {
                 headers: {Authorization: "Bearer " + token},
