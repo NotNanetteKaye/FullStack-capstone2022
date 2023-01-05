@@ -43,6 +43,11 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) =>
                 <p>Popularity: {artist.popularity}</p>
                 <p>{artist.external_urls.spotify}</p>
                 <button type='submit'>Save me to your faves! </button>
+                {user ? (
+                    <p></p>
+                ) : (
+                    <h5>MUST BE LOGGED IN ORDER TO SAVE</h5>
+                )}
             </form>
         </div>
     )
