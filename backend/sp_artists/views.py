@@ -7,8 +7,6 @@ from .models import SpArtists
 from .serializers import SpArtistsSerializer
 from django.shortcuts import get_object_or_404
 
-# Create your views here.
-
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def artist_list(request):
