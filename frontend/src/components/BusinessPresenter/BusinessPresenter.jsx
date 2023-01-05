@@ -15,7 +15,7 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
             address: address ,
             thumbnail: thumbnail ,
             link: hours,
-            user_id: 1 ,
+            user_id: `${user.id}` ,
         };
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/businesses/', 
