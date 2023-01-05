@@ -44,3 +44,9 @@ button.specificbusiness {
     color: white;
     background-color: #897f67;
   }
+
+  h5 {
+    color: #ac1d1d;
+    margin-top: 3mm;
+    font: bold 1.2em Georgia, Times, "Times New Roman", serif;
+  }

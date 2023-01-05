@@ -42,6 +42,11 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
                 <p>{place.hours}</p>
                 <p>{place.address}</p>
                 <button type='submit' className="specificbusiness">Save me to your faves!</button>
+                {user ? (
+                    <p></p>
+                ) : (
+                    <h5>MUST BE LOGGED IN ORDER TO SAVE</h5>
+                )}
             </form>
         </div>
     )
