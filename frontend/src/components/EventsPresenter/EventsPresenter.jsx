@@ -16,7 +16,7 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
            description: description,
            image: image,
            link: link,
-           user_id: 1,
+           user_id: `${user.id}`,
         }
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/upcoming_events/', 
