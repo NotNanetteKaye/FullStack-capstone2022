@@ -45,6 +45,11 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
                 <p>{event.description}</p>
                 <p>{event.link}</p>
                 <button type='submit' className='eventsbusiness'>Save me to your faves!</button>
+                {user ? (
+                    <p></p>
+                ) : (
+                    <h5>MUST BE LOGGED IN ORDER TO SAVE</h5>
+                )}
             </form>
         </div>
     )
