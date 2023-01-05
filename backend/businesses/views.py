@@ -14,7 +14,6 @@ def business_list(request):
         events = Business.objects.all()
         serializer = BusinessSerializer(events, many=True)
         return Response(serializer.data)
-
     elif request.method == 'POST':
         serializer = BusinessSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
