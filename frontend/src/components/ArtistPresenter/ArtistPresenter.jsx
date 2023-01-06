@@ -9,11 +9,31 @@ const ArtistPresenter = ({artist, spotify_id, img, artist_name, genre, link}) =>
     const handleSubmit = async (e) => {
         e.preventDefault();
         let newFaveArtist = {
-            spotify_id: spotify_id ,
-            image: img ,
-            artist_name: artist_name ,
-            genre: genre,
-            URI: link,
+            spotify_id: `${spotify_id ? (
+                spotify_id
+            ) : (
+                'spotify_id'
+            )}` ,
+            image: `${img ? (
+                img
+            ) : (
+                'img'
+            )}` ,
+            artist_name: `${artist_name ? (
+                artist_name
+            ) : (
+                'No artist name'
+            )}` ,
+            genre: `${genre ? (
+                genre
+            ) : (
+                'genre'
+            )}`,
+            URI: `${link ? (
+                link
+            ) : (
+                'link'
+            )}`,
             user_id: `${user.id}` ,
         };
         try {
