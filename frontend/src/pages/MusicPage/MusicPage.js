@@ -9,637 +9,533 @@ const MusicPage = () => {
     const [artist, setArtists] = useState([
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/1c22GXH30ijlOfXhfLz9Df"
+                "spotify": "https://open.spotify.com/artist/5lwmRuXgjX8xIwlnauTZIP"
             },
             "followers": {
                 "href": null,
-                "total": 901474
+                "total": 17390632
             },
             "genres": [
-                "latin pop",
-                "tropical"
+                "bachata"
             ],
-            "href": "https://api.spotify.com/v1/artists/1c22GXH30ijlOfXhfLz9Df",
-            "id": "1c22GXH30ijlOfXhfLz9Df",
+            "href": "https://api.spotify.com/v1/artists/5lwmRuXgjX8xIwlnauTZIP",
+            "id": "5lwmRuXgjX8xIwlnauTZIP",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb8c145958cd0bf70d695ac0f0",
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb6d8b48abede0f9e433aa6e49",
                     "width": 640
                 },
                 {
                     "height": 320,
-                    "url": "https://i.scdn.co/image/ab676161000051748c145958cd0bf70d695ac0f0",
+                    "url": "https://i.scdn.co/image/ab676161000051746d8b48abede0f9e433aa6e49",
                     "width": 320
                 },
                 {
                     "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f1788c145958cd0bf70d695ac0f0",
+                    "url": "https://i.scdn.co/image/ab6761610000f1786d8b48abede0f9e433aa6e49",
                     "width": 160
                 }
             ],
-            "name": "Elvis Crespo",
-            "popularity": 65,
+            "name": "Romeo Santos",
+            "popularity": 83,
             "type": "artist",
-            "uri": "spotify:artist:1c22GXH30ijlOfXhfLz9Df"
+            "uri": "spotify:artist:5lwmRuXgjX8xIwlnauTZIP"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2weA6hhVqTIN2gSn9PUB9U"
+                "spotify": "https://open.spotify.com/artist/4RnIr0AAau1SBJMbjJ9poC"
             },
             "followers": {
                 "href": null,
-                "total": 497888
+                "total": 286055
             },
             "genres": [
-                "cha-cha-cha",
-                "cuban rumba",
-                "mambo",
-                "musica tradicional cubana",
-                "salsa",
-                "tropical"
+                "bachata",
+                "bachata dominicana",
+                "dominican pop"
             ],
-            "href": "https://api.spotify.com/v1/artists/2weA6hhVqTIN2gSn9PUB9U",
-            "id": "2weA6hhVqTIN2gSn9PUB9U",
+            "href": "https://api.spotify.com/v1/artists/4RnIr0AAau1SBJMbjJ9poC",
+            "id": "4RnIr0AAau1SBJMbjJ9poC",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5ebb58cbc73f2b755f60134c54b",
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb3fc19d33cb24c6cc125bb752",
                     "width": 640
                 },
                 {
                     "height": 320,
-                    "url": "https://i.scdn.co/image/ab67616100005174b58cbc73f2b755f60134c54b",
+                    "url": "https://i.scdn.co/image/ab676161000051743fc19d33cb24c6cc125bb752",
                     "width": 320
                 },
                 {
                     "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f178b58cbc73f2b755f60134c54b",
+                    "url": "https://i.scdn.co/image/ab6761610000f1783fc19d33cb24c6cc125bb752",
                     "width": 160
                 }
             ],
-            "name": "Celia Cruz",
-            "popularity": 64,
+            "name": "El Chaval de la Bachata",
+            "popularity": 54,
             "type": "artist",
-            "uri": "spotify:artist:2weA6hhVqTIN2gSn9PUB9U"
+            "uri": "spotify:artist:4RnIr0AAau1SBJMbjJ9poC"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/7wLYNBd1fXGEKSLJMNnlt4"
+                "spotify": "https://open.spotify.com/artist/1LKPL2O3vA3ozNsmshDg3o"
             },
             "followers": {
                 "href": null,
-                "total": 147266
-            },
-            "genres": [
-                "merengue",
-                "tropical"
-            ],
-            "href": "https://api.spotify.com/v1/artists/7wLYNBd1fXGEKSLJMNnlt4",
-            "id": "7wLYNBd1fXGEKSLJMNnlt4",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273c89b6348c1b7f7a08aa8256d",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02c89b6348c1b7f7a08aa8256d",
-                    "width": 300
-                },
-                {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851c89b6348c1b7f7a08aa8256d",
-                    "width": 64
-                }
-            ],
-            "name": "Oro Solido",
-            "popularity": 52,
-            "type": "artist",
-            "uri": "spotify:artist:7wLYNBd1fXGEKSLJMNnlt4"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/47MpMsUfWtgyIIBEFOr4FE"
-            },
-            "followers": {
-                "href": null,
-                "total": 7636256
-            },
-            "genres": [
-                "latin hip hop",
-                "latin pop",
-                "reggaeton",
-                "reggaeton flow",
-                "trap latino",
-                "urbano latino"
-            ],
-            "href": "https://api.spotify.com/v1/artists/47MpMsUfWtgyIIBEFOr4FE",
-            "id": "47MpMsUfWtgyIIBEFOr4FE",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb1db8a4795dc8b97abc1f6f11",
-                    "width": 640
-                },
-                {
-                    "height": 320,
-                    "url": "https://i.scdn.co/image/ab676161000051741db8a4795dc8b97abc1f6f11",
-                    "width": 320
-                },
-                {
-                    "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f1781db8a4795dc8b97abc1f6f11",
-                    "width": 160
-                }
-            ],
-            "name": "Lunay",
-            "popularity": 72,
-            "type": "artist",
-            "uri": "spotify:artist:47MpMsUfWtgyIIBEFOr4FE"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3rs3EOlJ8jyPpdGiQ9Mhub"
-            },
-            "followers": {
-                "href": null,
-                "total": 839819
+                "total": 1378635
             },
             "genres": [
                 "bachata",
                 "bachata dominicana",
                 "tropical"
             ],
-            "href": "https://api.spotify.com/v1/artists/3rs3EOlJ8jyPpdGiQ9Mhub",
-            "id": "3rs3EOlJ8jyPpdGiQ9Mhub",
+            "href": "https://api.spotify.com/v1/artists/1LKPL2O3vA3ozNsmshDg3o",
+            "id": "1LKPL2O3vA3ozNsmshDg3o",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/c88ecd17387b1733226d728ef621bb91bf85f062",
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebe420b69b5afbd661aec3c53c",
                     "width": 640
                 },
                 {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/7b97e399148b92a2787e60938f04d30417933d3c",
-                    "width": 300
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174e420b69b5afbd661aec3c53c",
+                    "width": 320
                 },
                 {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/d4a403f5a2860cc48bca9ab277f6a8230b3fc14b",
-                    "width": 64
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178e420b69b5afbd661aec3c53c",
+                    "width": 160
                 }
             ],
-            "name": "Monchy & Alexandra",
+            "name": "Zacarias Ferreira",
             "popularity": 61,
             "type": "artist",
-            "uri": "spotify:artist:3rs3EOlJ8jyPpdGiQ9Mhub"
+            "uri": "spotify:artist:1LKPL2O3vA3ozNsmshDg3o"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2Id1LjA4Y50a8VCUZHZykl"
+                "spotify": "https://open.spotify.com/artist/5zvRX0y0JYtGOmGJwLwyIL"
             },
             "followers": {
                 "href": null,
-                "total": 7072
+                "total": 271232
             },
             "genres": [
-                "chicano punk",
-                "hardcore punk",
-                "punk 'n' roll"
-            ],
-            "href": "https://api.spotify.com/v1/artists/2Id1LjA4Y50a8VCUZHZykl",
-            "id": "2Id1LjA4Y50a8VCUZHZykl",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb3cdaf3d4fc544500ac516f69",
-                    "width": 640
-                },
-                {
-                    "height": 320,
-                    "url": "https://i.scdn.co/image/ab676161000051743cdaf3d4fc544500ac516f69",
-                    "width": 320
-                },
-                {
-                    "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f1783cdaf3d4fc544500ac516f69",
-                    "width": 160
-                }
-            ],
-            "name": "Manic Hispanic",
-            "popularity": 23,
-            "type": "artist",
-            "uri": "spotify:artist:2Id1LjA4Y50a8VCUZHZykl"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3ZS3HDHJyW3lq0brAOK7y3"
-            },
-            "followers": {
-                "href": null,
-                "total": 117
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/3ZS3HDHJyW3lq0brAOK7y3",
-            "id": "3ZS3HDHJyW3lq0brAOK7y3",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273443026d76849f5c2095ddde6",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02443026d76849f5c2095ddde6",
-                    "width": 300
-                },
-                {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851443026d76849f5c2095ddde6",
-                    "width": 64
-                }
-            ],
-            "name": "Hispanic",
-            "popularity": 0,
-            "type": "artist",
-            "uri": "spotify:artist:3ZS3HDHJyW3lq0brAOK7y3"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/5LOCNr4duLmyDsTH7ZBXNc"
-            },
-            "followers": {
-                "href": null,
-                "total": 330
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/5LOCNr4duLmyDsTH7ZBXNc",
-            "id": "5LOCNr4duLmyDsTH7ZBXNc",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273f28863abbd35b6dcc73a0a22",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e023519c76e030af148e7cec59f",
-                    "width": 300
-                },
-                {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d000048513519c76e030af148e7cec59f",
-                    "width": 64
-                }
-            ],
-            "name": "Satanic Hispanic",
-            "popularity": 7,
-            "type": "artist",
-            "uri": "spotify:artist:5LOCNr4duLmyDsTH7ZBXNc"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4sjpo2wiWF1tKM3CaveBaC"
-            },
-            "followers": {
-                "href": null,
-                "total": 331
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/4sjpo2wiWF1tKM3CaveBaC",
-            "id": "4sjpo2wiWF1tKM3CaveBaC",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273e943cee2ff7a8426b3e5b54c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02e943cee2ff7a8426b3e5b54c",
-                    "width": 300
-                },
-                {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851e943cee2ff7a8426b3e5b54c",
-                    "width": 64
-                }
-            ],
-            "name": "Hispanic MC's",
-            "popularity": 7,
-            "type": "artist",
-            "uri": "spotify:artist:4sjpo2wiWF1tKM3CaveBaC"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4KlV0ruvb1ffYzQ15JJXhK"
-            },
-            "followers": {
-                "href": null,
-                "total": 68
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/4KlV0ruvb1ffYzQ15JJXhK",
-            "id": "4KlV0ruvb1ffYzQ15JJXhK",
-            "images": [],
-            "name": "Hispanic",
-            "popularity": 0,
-            "type": "artist",
-            "uri": "spotify:artist:4KlV0ruvb1ffYzQ15JJXhK"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/6PtKN5yctUgBtswIU55gL9"
-            },
-            "followers": {
-                "href": null,
-                "total": 2
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/6PtKN5yctUgBtswIU55gL9",
-            "id": "6PtKN5yctUgBtswIU55gL9",
-            "images": [],
-            "name": "Satanic Hispanic",
-            "popularity": 0,
-            "type": "artist",
-            "uri": "spotify:artist:6PtKN5yctUgBtswIU55gL9"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/7yEehd9iZ5gWzsKk1IzWpr"
-            },
-            "followers": {
-                "href": null,
-                "total": 119
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/7yEehd9iZ5gWzsKk1IzWpr",
-            "id": "7yEehd9iZ5gWzsKk1IzWpr",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb2f38817024b15ae1d4c38f72",
-                    "width": 640
-                },
-                {
-                    "height": 320,
-                    "url": "https://i.scdn.co/image/ab676161000051742f38817024b15ae1d4c38f72",
-                    "width": 320
-                },
-                {
-                    "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f1782f38817024b15ae1d4c38f72",
-                    "width": 160
-                }
-            ],
-            "name": "Soy the Organic Hispanic",
-            "popularity": 0,
-            "type": "artist",
-            "uri": "spotify:artist:7yEehd9iZ5gWzsKk1IzWpr"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4oVcPiYDvfGxamTzwvnKtp"
-            },
-            "followers": {
-                "href": null,
-                "total": 56987
-            },
-            "genres": [
-                "merengue",
+                "bachata",
+                "bachata dominicana",
                 "tropical"
             ],
-            "href": "https://api.spotify.com/v1/artists/4oVcPiYDvfGxamTzwvnKtp",
-            "id": "4oVcPiYDvfGxamTzwvnKtp",
+            "href": "https://api.spotify.com/v1/artists/5zvRX0y0JYtGOmGJwLwyIL",
+            "id": "5zvRX0y0JYtGOmGJwLwyIL",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5ebc225d930c8ee110469f52988",
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb62a7b13e5f167f8dfc9c8b6f",
                     "width": 640
                 },
                 {
                     "height": 320,
-                    "url": "https://i.scdn.co/image/ab67616100005174c225d930c8ee110469f52988",
+                    "url": "https://i.scdn.co/image/ab6761610000517462a7b13e5f167f8dfc9c8b6f",
                     "width": 320
                 },
                 {
                     "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f178c225d930c8ee110469f52988",
+                    "url": "https://i.scdn.co/image/ab6761610000f17862a7b13e5f167f8dfc9c8b6f",
                     "width": 160
                 }
             ],
-            "name": "Mala Fe",
-            "popularity": 47,
+            "name": "Bachata Heightz",
+            "popularity": 50,
             "type": "artist",
-            "uri": "spotify:artist:4oVcPiYDvfGxamTzwvnKtp"
+            "uri": "spotify:artist:5zvRX0y0JYtGOmGJwLwyIL"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/1sVJs0swrU9xOOyQFobvDL"
+                "spotify": "https://open.spotify.com/artist/7mvTTmzM4ALyttOUavrRPd"
             },
             "followers": {
                 "href": null,
-                "total": 5
+                "total": 5428
             },
             "genres": [],
-            "href": "https://api.spotify.com/v1/artists/1sVJs0swrU9xOOyQFobvDL",
-            "id": "1sVJs0swrU9xOOyQFobvDL",
+            "href": "https://api.spotify.com/v1/artists/7mvTTmzM4ALyttOUavrRPd",
+            "id": "7mvTTmzM4ALyttOUavrRPd",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273fe0224851959ffcc8d2a2d5b",
+                    "url": "https://i.scdn.co/image/ab67616d0000b273c7fac8c4edff97abdb50de77",
                     "width": 640
                 },
                 {
                     "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02fe0224851959ffcc8d2a2d5b",
+                    "url": "https://i.scdn.co/image/ab67616d00001e02c7fac8c4edff97abdb50de77",
                     "width": 300
                 },
                 {
                     "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851fe0224851959ffcc8d2a2d5b",
+                    "url": "https://i.scdn.co/image/ab67616d00004851c7fac8c4edff97abdb50de77",
                     "width": 64
                 }
             ],
-            "name": "HISPANIC VENOM",
-            "popularity": 0,
+            "name": "Bachata All Stars",
+            "popularity": 35,
             "type": "artist",
-            "uri": "spotify:artist:1sVJs0swrU9xOOyQFobvDL"
+            "uri": "spotify:artist:7mvTTmzM4ALyttOUavrRPd"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4lQFwiUsmktYB42zE5JWV7"
+                "spotify": "https://open.spotify.com/artist/0LnHdW6HMPoOlNdhG3DHjE"
             },
             "followers": {
                 "href": null,
-                "total": 108
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/4lQFwiUsmktYB42zE5JWV7",
-            "id": "4lQFwiUsmktYB42zE5JWV7",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273099d1cec1ba5637223c6080c",
-                    "width": 640
-                },
-                {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02099d1cec1ba5637223c6080c",
-                    "width": 300
-                },
-                {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851099d1cec1ba5637223c6080c",
-                    "width": 64
-                }
-            ],
-            "name": "Hispánico",
-            "popularity": 0,
-            "type": "artist",
-            "uri": "spotify:artist:4lQFwiUsmktYB42zE5JWV7"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/1b4LaWxN4OxLAkTOmJBd69"
-            },
-            "followers": {
-                "href": null,
-                "total": 37
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/1b4LaWxN4OxLAkTOmJBd69",
-            "id": "1b4LaWxN4OxLAkTOmJBd69",
-            "images": [],
-            "name": "Hispanic M.C.'s",
-            "popularity": 3,
-            "type": "artist",
-            "uri": "spotify:artist:1b4LaWxN4OxLAkTOmJBd69"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/7FAbBsoCOTwCFiGIR8xw2f"
-            },
-            "followers": {
-                "href": null,
-                "total": 1687
-            },
-            "genres": [],
-            "href": "https://api.spotify.com/v1/artists/7FAbBsoCOTwCFiGIR8xw2f",
-            "id": "7FAbBsoCOTwCFiGIR8xw2f",
-            "images": [
-                {
-                    "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb02a5730fb346d0961f21d401",
-                    "width": 640
-                },
-                {
-                    "height": 320,
-                    "url": "https://i.scdn.co/image/ab6761610000517402a5730fb346d0961f21d401",
-                    "width": 320
-                },
-                {
-                    "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f17802a5730fb346d0961f21d401",
-                    "width": 160
-                }
-            ],
-            "name": "The Hispanic Connect",
-            "popularity": 1,
-            "type": "artist",
-            "uri": "spotify:artist:7FAbBsoCOTwCFiGIR8xw2f"
-        },
-        {
-            "external_urls": {
-                "spotify": "https://open.spotify.com/artist/1kbxECs4rS3r0JipTWFr1Q"
-            },
-            "followers": {
-                "href": null,
-                "total": 688
+                "total": 1983405
             },
             "genres": [
-                "cumbia",
-                "porro"
+                "afghan pop",
+                "arab pop",
+                "belly dance",
+                "lebanese pop"
             ],
-            "href": "https://api.spotify.com/v1/artists/1kbxECs4rS3r0JipTWFr1Q",
-            "id": "1kbxECs4rS3r0JipTWFr1Q",
+            "href": "https://api.spotify.com/v1/artists/0LnHdW6HMPoOlNdhG3DHjE",
+            "id": "0LnHdW6HMPoOlNdhG3DHjE",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab67616d0000b273a5a79b3c4bf7b47bf97979fd",
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebe781800c5dec892935588dc1",
                     "width": 640
                 },
                 {
-                    "height": 300,
-                    "url": "https://i.scdn.co/image/ab67616d00001e02a5a79b3c4bf7b47bf97979fd",
-                    "width": 300
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174e781800c5dec892935588dc1",
+                    "width": 320
                 },
                 {
-                    "height": 64,
-                    "url": "https://i.scdn.co/image/ab67616d00004851a5a79b3c4bf7b47bf97979fd",
-                    "width": 64
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178e781800c5dec892935588dc1",
+                    "width": 160
                 }
             ],
-            "name": "Los Inmortales",
-            "popularity": 13,
+            "name": "Nancy Ajram",
+            "popularity": 60,
             "type": "artist",
-            "uri": "spotify:artist:1kbxECs4rS3r0JipTWFr1Q"
+            "uri": "spotify:artist:0LnHdW6HMPoOlNdhG3DHjE"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/7h4IOJmK6gaqaoPTMBpaZY"
+                "spotify": "https://open.spotify.com/artist/5XI1WlZfO0NQ6KlIHDy3dt"
             },
             "followers": {
                 "href": null,
-                "total": 7
+                "total": 55
             },
             "genres": [],
-            "href": "https://api.spotify.com/v1/artists/7h4IOJmK6gaqaoPTMBpaZY",
-            "id": "7h4IOJmK6gaqaoPTMBpaZY",
-            "images": [],
-            "name": "Hispanico latino",
+            "href": "https://api.spotify.com/v1/artists/5XI1WlZfO0NQ6KlIHDy3dt",
+            "id": "5XI1WlZfO0NQ6KlIHDy3dt",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb3aa714395d0f5774798c8e0c",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab676161000051743aa714395d0f5774798c8e0c",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f1783aa714395d0f5774798c8e0c",
+                    "width": 160
+                }
+            ],
+            "name": "Arab!",
+            "popularity": 21,
+            "type": "artist",
+            "uri": "spotify:artist:5XI1WlZfO0NQ6KlIHDy3dt"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1Uff91EOsvd99rtAupatMP"
+            },
+            "followers": {
+                "href": null,
+                "total": 1352271
+            },
+            "genres": [
+                "classical",
+                "impressionism",
+                "post-romantic era"
+            ],
+            "href": "https://api.spotify.com/v1/artists/1Uff91EOsvd99rtAupatMP",
+            "id": "1Uff91EOsvd99rtAupatMP",
+            "images": [
+                {
+                    "height": 458,
+                    "url": "https://i.scdn.co/image/5e1155c852578ddf5d2cfea94ccb3a8a65efa882",
+                    "width": 387
+                },
+                {
+                    "height": 237,
+                    "url": "https://i.scdn.co/image/d9bf00a7a314028df902da1d026a9844a3365d61",
+                    "width": 200
+                },
+                {
+                    "height": 76,
+                    "url": "https://i.scdn.co/image/155965c396369f20273bc6ba6a14f4185ffad805",
+                    "width": 64
+                }
+            ],
+            "name": "Claude Debussy",
+            "popularity": 70,
+            "type": "artist",
+            "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3CVIomosotXKy9Zrc7S6YB"
+            },
+            "followers": {
+                "href": null,
+                "total": 801
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/3CVIomosotXKy9Zrc7S6YB",
+            "id": "3CVIomosotXKy9Zrc7S6YB",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebb07a8f3857c600f5dae6d568",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174b07a8f3857c600f5dae6d568",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178b07a8f3857c600f5dae6d568",
+                    "width": 160
+                }
+            ],
+            "name": "Arabian",
+            "popularity": 33,
+            "type": "artist",
+            "uri": "spotify:artist:3CVIomosotXKy9Zrc7S6YB"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6g8Jqb5JMfv92eB2r0awTN"
+            },
+            "followers": {
+                "href": null,
+                "total": 62871
+            },
+            "genres": [
+                "chamber psych",
+                "scottish indie",
+                "slowcore"
+            ],
+            "href": "https://api.spotify.com/v1/artists/6g8Jqb5JMfv92eB2r0awTN",
+            "id": "6g8Jqb5JMfv92eB2r0awTN",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebfc4f8a8ccd3a510479b1c85f",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab67616100005174fc4f8a8ccd3a510479b1c85f",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f178fc4f8a8ccd3a510479b1c85f",
+                    "width": 160
+                }
+            ],
+            "name": "Arab Strap",
+            "popularity": 37,
+            "type": "artist",
+            "uri": "spotify:artist:6g8Jqb5JMfv92eB2r0awTN"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4BMv5TsBZ1EJ4uynEp2vI0"
+            },
+            "followers": {
+                "href": null,
+                "total": 15288
+            },
+            "genres": [
+                "blues rock",
+                "modern blues",
+                "native american contemporary"
+            ],
+            "href": "https://api.spotify.com/v1/artists/4BMv5TsBZ1EJ4uynEp2vI0",
+            "id": "4BMv5TsBZ1EJ4uynEp2vI0",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb53ddad88f4dd9ce2f4e7201a",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab6761610000517453ddad88f4dd9ce2f4e7201a",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f17853ddad88f4dd9ce2f4e7201a",
+                    "width": 160
+                }
+            ],
+            "name": "Indigenous",
+            "popularity": 28,
+            "type": "artist",
+            "uri": "spotify:artist:4BMv5TsBZ1EJ4uynEp2vI0"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2HxuQUO9XbsVYtsIaZjfKW"
+            },
+            "followers": {
+                "href": null,
+                "total": 489
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/2HxuQUO9XbsVYtsIaZjfKW",
+            "id": "2HxuQUO9XbsVYtsIaZjfKW",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb65a9e70e48ea9b52825b1d65",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab6761610000517465a9e70e48ea9b52825b1d65",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f17865a9e70e48ea9b52825b1d65",
+                    "width": 160
+                }
+            ],
+            "name": "Indigenous",
             "popularity": 2,
             "type": "artist",
-            "uri": "spotify:artist:7h4IOJmK6gaqaoPTMBpaZY"
+            "uri": "spotify:artist:2HxuQUO9XbsVYtsIaZjfKW"
         },
         {
             "external_urls": {
-                "spotify": "https://open.spotify.com/artist/5YO3yQx97KLLE9zJYa4jaU"
+                "spotify": "https://open.spotify.com/artist/7HrK2HP1tJfnMW2HFDw4kb"
             },
             "followers": {
                 "href": null,
-                "total": 79427
+                "total": 23309
             },
             "genres": [
-                "boom bap espanol",
-                "hip hop cubano",
-                "venezuelan hip hop"
+                "canadian indigenous",
+                "native american",
+                "powwow"
             ],
-            "href": "https://api.spotify.com/v1/artists/5YO3yQx97KLLE9zJYa4jaU",
-            "id": "5YO3yQx97KLLE9zJYa4jaU",
+            "href": "https://api.spotify.com/v1/artists/7HrK2HP1tJfnMW2HFDw4kb",
+            "id": "7HrK2HP1tJfnMW2HFDw4kb",
             "images": [
                 {
                     "height": 640,
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb5073332daaf14763d41967f0",
+                    "url": "https://i.scdn.co/image/ab67616d0000b273c0f6bec6f2c153985b416dfc",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e02c0f6bec6f2c153985b416dfc",
+                    "width": 300
+                },
+                {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d00004851c0f6bec6f2c153985b416dfc",
+                    "width": 64
+                }
+            ],
+            "name": "Fawn Wood",
+            "popularity": 36,
+            "type": "artist",
+            "uri": "spotify:artist:7HrK2HP1tJfnMW2HFDw4kb"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3wCSquQET1QJxUDJhXsMSr"
+            },
+            "followers": {
+                "href": null,
+                "total": 138
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/3wCSquQET1QJxUDJhXsMSr",
+            "id": "3wCSquQET1QJxUDJhXsMSr",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b27389fd66cf01fce2cb4a9d511d",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://i.scdn.co/image/ab67616d00001e0289fd66cf01fce2cb4a9d511d",
+                    "width": 300
+                },
+                {
+                    "height": 64,
+                    "url": "https://i.scdn.co/image/ab67616d0000485189fd66cf01fce2cb4a9d511d",
+                    "width": 64
+                }
+            ],
+            "name": "Indigenous Peoples",
+            "popularity": 3,
+            "type": "artist",
+            "uri": "spotify:artist:3wCSquQET1QJxUDJhXsMSr"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1P4nCVoHEo32nTMyL5f8PX"
+            },
+            "followers": {
+                "href": null,
+                "total": 6
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/1P4nCVoHEo32nTMyL5f8PX",
+            "id": "1P4nCVoHEo32nTMyL5f8PX",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb9addd97e1ac4e091f2da0829",
                     "width": 640
                 },
                 {
                     "height": 320,
-                    "url": "https://i.scdn.co/image/ab676161000051745073332daaf14763d41967f0",
+                    "url": "https://i.scdn.co/image/ab676161000051749addd97e1ac4e091f2da0829",
                     "width": 320
                 },
                 {
                     "height": 160,
-                    "url": "https://i.scdn.co/image/ab6761610000f1785073332daaf14763d41967f0",
+                    "url": "https://i.scdn.co/image/ab6761610000f1789addd97e1ac4e091f2da0829",
                     "width": 160
                 }
             ],
-            "name": "Rxnde Akozta",
-            "popularity": 43,
+            "name": "Indigenous Rexxx",
+            "popularity": 7,
             "type": "artist",
-            "uri": "spotify:artist:5YO3yQx97KLLE9zJYa4jaU"
+            "uri": "spotify:artist:1P4nCVoHEo32nTMyL5f8PX"
         }
     ]);
 
