@@ -10,12 +10,36 @@ const EventsPresenter = ({event, title, when, address, description, image, link}
     const handleSubmit = async (e) => {
         e.preventDefault();
         let newFaveEvent = {
-           title: title,
-           when: when,
-           address: address,
-           description: description,
-           image: image,
-           link: link,
+           title: `${title ? (
+            title
+        ) : (
+            'Unknown title of event.'
+        )}`,
+           when: `${when ? (
+            when
+        ) : (
+            'Unknown date of event'
+        )}`,
+           address: `${address ? (
+            address
+        ) : (
+            'Unknown address of event.'
+        )}`,
+           description: `${description ? (
+            description
+        ) : (
+            'Unknown description of event.'
+        )}`,
+           image: `${image ? (
+            image
+        ) : (
+            'Unknown image event.'
+        )}`,
+           link: `${link ? (
+            link
+        ) : (
+            'Unknown link to event'
+        )}`,
            user_id: `${user.id}`,
         }
         try {
