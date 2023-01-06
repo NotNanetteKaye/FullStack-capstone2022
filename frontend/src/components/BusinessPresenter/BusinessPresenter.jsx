@@ -10,11 +10,31 @@ const BusinessPresenter = ({place, title, type, address, thumbnail, hours}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         let newFaveBusiness = {
-            title: title ,
-            type: type ,
-            address: address ,
-            thumbnail: thumbnail ,
-            link: hours,
+            title: `${title ? (
+                title
+            ) : (
+                'Unknown business name.'
+            )}` ,
+            type: `${type ? (
+                type
+            ) : (
+                'Unknown type.'
+            )}` ,
+            address: `${address ? (
+                address
+            ) : (
+                'Unknown address.'
+            )}` ,
+            thumbnail: `${thumbnail ? (
+                thumbnail
+            ) : (
+                'thumbnail'
+            )}` ,
+            link: `${hours ? (
+                hours
+            ) : (
+                'Unknown hours.'
+            )}`,
             user_id: `${user.id}` ,
         };
         try {
