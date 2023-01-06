@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "c40ef9b6-8781-4ced-8d65-6183b72595f3",
+		"name": "capstone: businesses app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22654845"
+	},
+	"item": [
+		{
+			"name": "get_all_businesses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_business (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcxODUxODI4LCJpYXQiOjE2NzA5ODc4MjgsImp0aSI6IjMxYjdmZDkyMzNkYjQ1YzJiZDJiYWI2NThiN2ZlYjMyIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.iz4Zl7HFPkwmL1Ry9OvLo3EzpdxVye8z6xcrJiBjEE0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"1\",\n    \"type\": \"1\",\n    \"address\": \"1\",\n    \"thumbnail\": \"1\",\n    \"link\": \"1\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_business_by_user_id (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjczNzE5MTg4LCJpYXQiOjE2NzI4NTUxODgsImp0aSI6IjI0MDUyY2NhODEwNDQ4YmFhNzczMzhjYzU2ZWY2YzE0IiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.cCL_0FulnxNUIT5EWe9jefu7vWocttYsXFGpRxxwB6Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_business (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcxODUxODI4LCJpYXQiOjE2NzA5ODc4MjgsImp0aSI6IjMxYjdmZDkyMzNkYjQ1YzJiZDJiYWI2NThiN2ZlYjMyIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.iz4Zl7HFPkwmL1Ry9OvLo3EzpdxVye8z6xcrJiBjEE0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"2\",\n    \"type\": \"1\",\n    \"address\": \"1\",\n    \"thumbnail\": \"1\",\n    \"link\": \"1\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_business (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcxODUxODI4LCJpYXQiOjE2NzA5ODc4MjgsImp0aSI6IjMxYjdmZDkyMzNkYjQ1YzJiZDJiYWI2NThiN2ZlYjMyIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.iz4Zl7HFPkwmL1Ry9OvLo3EzpdxVye8z6xcrJiBjEE0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

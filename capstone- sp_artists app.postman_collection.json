@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "5d1e1020-4981-4ad0-8660-34db35386e74",
+		"name": "capstone: sp_artists app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22654845"
+	},
+	"item": [
+		{
+			"name": "create_fave_artist (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjczNzQwMjE5LCJpYXQiOjE2NzI4NzYyMTksImp0aSI6Ijk3NWVjZjRhNWM4MjRjZjY5NDgwZWQ5ZGFmOTEwY2I1IiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9._PnoE17oevtyvqFwbMyIRB6QGqUsnxFQb9i2IL5ErOk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"spotify_id\": \"4\",\n    \"image\": \"5\",\n    \"artist_name\": \"5\",\n    \"genre\": \"5\",\n    \"URI\": \"5\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/artists/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"artists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_artist_by_user_id (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjczNzQwMzEwLCJpYXQiOjE2NzI4NzYzMTAsImp0aSI6IjE4MGY5ZWQ0ZGIzMjQ1MTJhYjJhMmIyZmNkMDNjY2VlIiwidXNlcl9pZCI6MiwidXNlcm5hbWUiOiJuYW5ldHRlIiwiZmlyc3RfbmFtZSI6Im5hbmV0dGUifQ.7TUqevox9sj4NMHh0enUbBrH7a1Ym6YI8xrs60h-JNQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/artists/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"artists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_artist (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcxODUxODI4LCJpYXQiOjE2NzA5ODc4MjgsImp0aSI6IjMxYjdmZDkyMzNkYjQ1YzJiZDJiYWI2NThiN2ZlYjMyIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.iz4Zl7HFPkwmL1Ry9OvLo3EzpdxVye8z6xcrJiBjEE0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"spotify_id\": \"4\",\n    \"image\": \"5\",\n    \"artist_name\": \"5\",\n    \"genre\": \"5\",\n    \"URI\": \"5\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/artists/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"artists",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_artist (pr)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjczMTMxNDYxLCJpYXQiOjE2NzIyNjc0NjEsImp0aSI6ImY0MDIzNDU0NjIzZjQ0MDg4MGNiNzc3MDgyMmNkYWFmIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJuYW5ldHRlZG9sZXJhIiwiZmlyc3RfbmFtZSI6IiJ9.OxoIAYghc13UG6FioJGehSr8x3KMn0bTDfS8y8lvi2M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/artists/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"artists",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
