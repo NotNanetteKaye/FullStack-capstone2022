@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import EventsMapper from "../../components/EventsMapper/EventsMapper"
 import '../EventsPage/EventsPage.css'
+import {SerpKEY} from "../../localKey"
+import axios from 'axios';
 
 const EventsPage  = () => {
     const [events, setEvents] = useState([{
@@ -242,6 +244,23 @@ const EventsPage  = () => {
           }
         ]
       }]);
+
+      const getEvents = async (search = "heritage month events") => {
+        try {
+          let response = await axios.get(
+            `https://serpapi.com/search?engine=google_events&q=${search}&location=texas&api_key=${SerpKEY}&limit=15`
+          );
+          setEvents(response.data.items);
+          console.log(response.data);
+        } catch (error) {
+          console.log(error.message);
+        }
+      };
+    
+      useEffect(() => {
+        getEvents();
+      }, []);
+    ;
 
     return (
         <div className='eventspage'>
